@@ -16,14 +16,30 @@ public class MatriculaController : ControllerBase
     private readonly SirarContext _db;
     public MatriculaController(SirarContext db) => _db = db;
 
-    // NOTA DE DISEÑO (equipo SIRAR, enero 2026):
-    // La validacion de prerrequisitos (regla R1) ya se hizo en el simulador de
-    // matricula del frontend. Queda pendiente para una iteracion futura repetirla
-    // aqui en el servidor. Prioridad baja: se asume que nadie llama a la API
-    // directamente, solo a traves de la app web.
     [HttpPost]
     public async Task<IActionResult> Matricular(MatriculaRequest req)
     {
+        var modulo = await _db.Modulos
+            .Include(m => m.Prerrequisitos)
+            .FirstOrDefaultAsync(m => m.Id == req.ModuloId);
+
+        if (modulo is null) return NotFound(new { mensaje = "Módulo no encontrado." });
+
+        foreach (var prereq in modulo.Prerrequisitos)
+        {
+            var aprobado = await _db.Inscripciones.AnyAsync(i =>
+                i.EstudianteId == req.EstudianteId &&
+                i.ModuloId == prereq.Id &&
+                i.Estado == "aprobado");
+
+            if (!aprobado)
+                return UnprocessableEntity(new
+                {
+                    mensaje = $"El módulo requiere haber aprobado {prereq.Codigo} ({prereq.Nombre}).",
+                    prerrequisito = prereq.Codigo
+                });
+        }
+
         var inscripcion = new Inscripcion
         {
             EstudianteId = req.EstudianteId,
