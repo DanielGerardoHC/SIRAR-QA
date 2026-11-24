@@ -1,6 +1,7 @@
 bin/
 obj/
 TestResults/
-*.db
 *.db-wal
 *.db-shm
+04_pruebas/test_output_full.txt
+04_pruebas/test_output_v2.txt
