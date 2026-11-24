@@ -1,0 +1,76 @@
+== Cabecera
+firma: b'SQLite format 3\x00'
+tamano_pagina: 4096
+paginas: 12 bytes_esperados: 49152 bytes_reales: 49152
+contador_cambios: 3
+version_valida_para: 3
+version_sqlite_escritora: 3050004
+cookie_esquema: 9
+user_version: 0 application_id: 0
+paginas_libres: 0 tronco_lista_libre: 0
+wal_shm_presentes: False False
+
+== Esquema
+('table', 'Estudiantes', 'Estudiantes', 2, 'CREATE TABLE "Estudiantes" (\n    "Id" INTEGER NOT NULL CONSTRAINT "PK_Estudiantes" PRIMARY KEY AUTOINCREMENT,\n    "Carnet" TEXT NOT NULL,\n    "Nombre" TEXT NOT NULL\n)')
+('table', 'sqlite_sequence', 'sqlite_sequence', 3, 'CREATE TABLE sqlite_sequence(name,seq)')
+('table', 'Modulos', 'Modulos', 4, 'CREATE TABLE "Modulos" (\n    "Id" INTEGER NOT NULL CONSTRAINT "PK_Modulos" PRIMARY KEY AUTOINCREMENT,\n    "Codigo" TEXT NOT NULL,\n    "Nombre" TEXT NOT NULL,\n    "Ciclo" INTEGER NOT NULL\n)')
+('table', 'RegistrosAuditoria', 'RegistrosAuditoria', 5, 'CREATE TABLE "RegistrosAuditoria" (\n    "Id" INTEGER NOT NULL CONSTRAINT "PK_RegistrosAuditoria" PRIMARY KEY AUTOINCREMENT,\n    "Fecha" TEXT NOT NULL,\n    "Usuario" TEXT NOT NULL,\n    "Accion" TEXT NOT NULL,\n    "Detalle" TEXT NOT NULL\n)')
+('table', 'Usuarios', 'Usuarios', 6, 'CREATE TABLE "Usuarios" (\n    "Id" INTEGER NOT NULL CONSTRAINT "PK_Usuarios" PRIMARY KEY AUTOINCREMENT,\n    "Email" TEXT NOT NULL,\n    "Password" TEXT NOT NULL,\n    "Rol" TEXT NOT NULL,\n    "EstudianteId" INTEGER NULL\n)')
+('table', 'Inscripciones', 'Inscripciones', 7, 'CREATE TABLE "Inscripciones" (\n    "Id" INTEGER NOT NULL CONSTRAINT "PK_Inscripciones" PRIMARY KEY AUTOINCREMENT,\n    "EstudianteId" INTEGER NOT NULL,\n    "ModuloId" INTEGER NOT NULL,\n    "Ciclo" TEXT NOT NULL,\n    "Nota" REAL NULL,\n    "Estado" TEXT NOT NULL,\n    CONSTRAINT "FK_Inscripciones_Estudiantes_EstudianteId" FOREIGN KEY ("EstudianteId") REFERENCES "Estudiantes" ("Id") ON DELETE CASCADE,\n    CONSTRAINT "FK_Inscripciones_Modulos_ModuloId" FOREIGN KEY ("ModuloId") REFERENCES "Modulos" ("Id") ON DELETE CASCADE\n)')
+('table', 'ModuloModulo', 'ModuloModulo', 8, 'CREATE TABLE "ModuloModulo" (\n    "ModuloId" INTEGER NOT NULL,\n    "PrerrequisitosId" INTEGER NOT NULL,\n    CONSTRAINT "PK_ModuloModulo" PRIMARY KEY ("ModuloId", "PrerrequisitosId"),\n    CONSTRAINT "FK_ModuloModulo_Modulos_ModuloId" FOREIGN KEY ("ModuloId") REFERENCES "Modulos" ("Id") ON DELETE CASCADE,\n    CONSTRAINT "FK_ModuloModulo_Modulos_PrerrequisitosId" FOREIGN KEY ("PrerrequisitosId") REFERENCES "Modulos" ("Id") ON DELETE CASCADE\n)')
+('index', 'sqlite_autoindex_ModuloModulo_1', 'ModuloModulo', 9, None)
+('index', 'IX_Inscripciones_EstudianteId', 'Inscripciones', 10, 'CREATE INDEX "IX_Inscripciones_EstudianteId" ON "Inscripciones" ("EstudianteId")')
+('index', 'IX_Inscripciones_ModuloId', 'Inscripciones', 11, 'CREATE INDEX "IX_Inscripciones_ModuloId" ON "Inscripciones" ("ModuloId")')
+('index', 'IX_ModuloModulo_PrerrequisitosId', 'ModuloModulo', 12, 'CREATE INDEX "IX_ModuloModulo_PrerrequisitosId" ON "ModuloModulo" ("PrerrequisitosId")')
+
+== Contenido
+-- Estudiantes: 2 filas
+   (1, 'SW-2023-014', 'Estudiante Regular Uno')
+   (2, 'SW-2023-091', 'Estudiante Bajo Investigación')
+-- Inscripciones: 6 filas
+   (1, 1, 1, '2025-C2', 7.5, 'aprobado')
+   (2, 1, 3, '2025-C2', 8.0, 'aprobado')
+   (3, 1, 4, '2026-C1', None, 'cursando')
+   (4, 2, 1, '2025-C2', 4.2, 'reprobado')
+   (5, 2, 2, '2026-C1', None, 'cursando')
+   (6, 2, 3, '2025-C2', 8.0, 'aprobado')
+-- ModuloModulo: 3 filas
+   (2, 1)
+   (4, 3)
+   (5, 2)
+-- Modulos: 5 filas
+   (1, 'COIDS0204', 'Diseño de Bases de Datos', 1)
+   (2, 'COIDS0704', 'Arquitectura de Datos Integral', 2)
+   (3, 'COIDS1104', 'Programación Orientada a Objetos', 1)
+   (4, 'COIDS1504', 'Manejo de Estructuras de Datos', 4)
+   (5, 'COIDS1204', 'Desarrollo de Funciones Avanzadas de Bases de Datos', 3)
+-- RegistrosAuditoria: 0 filas
+-- Usuarios: 4 filas
+   (1, 'coordinador@itca.edu.sv', 'Coord2026!', 'Coordinador', None)
+   (2, 'admin@itca.edu.sv', 'Admin2026!', 'Administrador', None)
+   (3, 'sw2023091@itca.edu.sv', 'estudiante123', 'Estudiante', 2)
+   (4, 'sw2023014@itca.edu.sv', 'estudiante123', 'Estudiante', 1)
+-- sqlite_sequence: 4 filas
+   ('Estudiantes', 2)
+   ('Modulos', 5)
+   ('Inscripciones', 6)
+   ('Usuarios', 4)
+
+== Integridad
+[('ok',)]
+journal_mode: ('delete',)
+
+== Bytes no asignados con texto residual
+pagina 1: tipo 13 celdas 11 bloque_libre 2479 hueco 1400 residual 0
+    bloque libre en 2479 tamano 8: b''
+pagina 2: tipo 13 celdas 2 bloque_libre 0 hueco 3998 residual 0
+pagina 3: tipo 13 celdas 4 bloque_libre 0 hueco 4017 residual 0
+pagina 4: tipo 13 celdas 5 bloque_libre 0 hueco 3826 residual 0
+pagina 5: tipo 13 celdas 0 bloque_libre 0 hueco 4088 residual 0
+pagina 6: tipo 13 celdas 4 bloque_libre 0 hueco 3875 residual 0
+pagina 7: tipo 13 celdas 6 bloque_libre 0 hueco 3906 residual 0
+pagina 8: tipo 13 celdas 3 bloque_libre 0 hueco 4062 residual 0
+pagina 9: tipo 10 celdas 3 bloque_libre 0 hueco 4060 residual 0
+pagina 10: tipo 10 celdas 6 bloque_libre 0 hueco 4044 residual 0
+pagina 11: tipo 10 celdas 6 bloque_libre 0 hueco 4043 residual 0
+pagina 12: tipo 10 celdas 3 bloque_libre 0 hueco 4066 residual 0

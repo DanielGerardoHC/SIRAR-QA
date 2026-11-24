@@ -1,0 +1,106 @@
+== Resumen
+eventos: 84
+primer evento: 2026-03-02T07:13:00 linea 1
+ultimo evento: 2026-03-14T03:32:00 linea 84
+orden cronologico: True
+zona horaria declarada: False
+
+== Niveles
+Counter({'INFO': 72, 'WARN': 12})
+
+== Eventos por cuenta
+  coordinador@itca.edu.sv: 46
+  sw2023014@itca.edu.sv: 34
+  sw2023091@itca.edu.sv: 4
+
+== Eventos por IP
+  10.20.3.22: 20
+  10.20.3.14: 19
+  10.20.5.31: 16
+  10.20.9.77: 16
+  10.20.4.9: 13
+
+== Cuentas por IP
+  10.20.3.14: ['coordinador@itca.edu.sv', 'sw2023014@itca.edu.sv']
+  10.20.3.22: ['coordinador@itca.edu.sv', 'sw2023014@itca.edu.sv']
+  10.20.4.9: ['coordinador@itca.edu.sv', 'sw2023014@itca.edu.sv']
+  10.20.5.31: ['coordinador@itca.edu.sv', 'sw2023014@itca.edu.sv']
+  10.20.9.77: ['coordinador@itca.edu.sv', 'sw2023091@itca.edu.sv']
+
+== Primera y ultima aparicion por cuenta
+  coordinador@itca.edu.sv: 2026-03-02T07:13:00 -> 2026-03-14T02:03:00 (46)
+  sw2023014@itca.edu.sv: 2026-03-02T07:40:00 -> 2026-03-14T03:32:00 (34)
+  sw2023091@itca.edu.sv: 2026-03-13T22:15:22 -> 2026-03-13T22:25:14 (4)
+
+== Endpoints
+  POST /api/auth/login: 49
+  GET /api/matricula/estudiante/{carnet}: 19
+  GET /api/modulos: 13
+  POST /api/matricula: 1
+  PUT /api/calificaciones/6: 1
+  GET /api/matricula/estudiante/SW-2023-091: 1
+
+== Campos presentes por tipo de evento
+  login exitoso x37: ['endpoint', 'ip', 'mensaje', 'nivel', 'origen', 'timestamp', 'usuario']
+  consulta de avance académico x19: ['endpoint', 'ip', 'mensaje', 'nivel', 'origen', 'timestamp', 'usuario']
+  consulta de catálogo de módulos x13: ['endpoint', 'ip', 'mensaje', 'nivel', 'origen', 'timestamp', 'usuario']
+  intento de login fallido x12: ['endpoint', 'intento_numero', 'ip', 'mensaje', 'nivel', 'origen', 'timestamp', 'usuario_intentado']
+  inscripción creada x1: ['cuerpo_peticion', 'endpoint', 'ip', 'mensaje', 'nivel', 'origen', 'origen_cliente', 'timestamp', 'usuario']
+  nota actualizada x1: ['cuerpo_peticion', 'endpoint', 'ip', 'mensaje', 'nivel', 'nota_anterior_observada_en_backup', 'origen', 'origen_cliente', 'timestamp', 'usuario']
+  consulta de avance académico x1: ['endpoint', 'ip', 'mensaje', 'nivel', 'origen', 'origen_cliente', 'timestamp', 'usuario']
+
+== Intervalos sin registros mayores a 12 horas
+  2026-03-02T09:21:00 (linea 4) -> 2026-03-02T21:24:00 (linea 5): 12:03:00
+  2026-03-04T11:44:00 (linea 24) -> 2026-03-05T01:22:00 (linea 25): 13:38:00
+  2026-03-05T20:19:00 (linea 37) -> 2026-03-06T09:50:00 (linea 38): 13:31:00
+  2026-03-06T14:12:00 (linea 45) -> 2026-03-07T05:35:00 (linea 46): 15:23:00
+  2026-03-07T09:52:00 (linea 50) -> 2026-03-07T22:10:00 (linea 51): 12:18:00
+  2026-03-08T17:49:00 (linea 62) -> 2026-03-13T22:14:03 (linea 63): 5 days, 4:25:03
+
+== Consultas autenticadas sin inicio de sesion previo en el registro
+  linea 2 2026-03-02T07:40:00 sw2023014@itca.edu.sv GET /api/matricula/estudiante/{carnet}
+
+== Eventos WARN y eventos de escritura
+  linea 63 2026-03-13T22:14:03 WARN coordinador@itca.edu.sv 10.20.9.77 POST /api/auth/login {'intento_numero': 1}
+  linea 64 2026-03-13T22:14:11 WARN coordinador@itca.edu.sv 10.20.9.77 POST /api/auth/login {'intento_numero': 2}
+  linea 65 2026-03-13T22:14:20 WARN coordinador@itca.edu.sv 10.20.9.77 POST /api/auth/login {'intento_numero': 3}
+  linea 66 2026-03-13T22:14:24 WARN coordinador@itca.edu.sv 10.20.9.77 POST /api/auth/login {'intento_numero': 4}
+  linea 67 2026-03-13T22:14:30 WARN coordinador@itca.edu.sv 10.20.9.77 POST /api/auth/login {'intento_numero': 5}
+  linea 68 2026-03-13T22:14:33 WARN coordinador@itca.edu.sv 10.20.9.77 POST /api/auth/login {'intento_numero': 6}
+  linea 69 2026-03-13T22:14:40 WARN coordinador@itca.edu.sv 10.20.9.77 POST /api/auth/login {'intento_numero': 7}
+  linea 70 2026-03-13T22:14:44 WARN coordinador@itca.edu.sv 10.20.9.77 POST /api/auth/login {'intento_numero': 8}
+  linea 71 2026-03-13T22:14:51 WARN coordinador@itca.edu.sv 10.20.9.77 POST /api/auth/login {'intento_numero': 9}
+  linea 72 2026-03-13T22:14:58 WARN coordinador@itca.edu.sv 10.20.9.77 POST /api/auth/login {'intento_numero': 10}
+  linea 73 2026-03-13T22:15:01 WARN coordinador@itca.edu.sv 10.20.9.77 POST /api/auth/login {'intento_numero': 11}
+  linea 74 2026-03-13T22:15:08 WARN coordinador@itca.edu.sv 10.20.9.77 POST /api/auth/login {'intento_numero': 12}
+  linea 76 2026-03-13T22:16:02 INFO sw2023091@itca.edu.sv 10.20.9.77 POST /api/matricula {'cuerpo_peticion': {'estudianteId': 2, 'moduloId': 2, 'ciclo': '2026-C1'}, 'origen_cliente': 'curl/8.4.0'}
+  linea 77 2026-03-13T22:22:14 INFO sw2023091@itca.edu.sv 10.20.9.77 PUT /api/calificaciones/6 {'cuerpo_peticion': {'nota': 8.0}, 'nota_anterior_observada_en_backup': 4.5, 'origen_cliente': 'curl/8.4.0'}
+
+== Secuencia desde la IP 10.20.9.77
+  2026-03-13T22:14:03 -> 2026-03-13T22:14:11: 8 s
+  2026-03-13T22:14:11 -> 2026-03-13T22:14:20: 9 s
+  2026-03-13T22:14:20 -> 2026-03-13T22:14:24: 4 s
+  2026-03-13T22:14:24 -> 2026-03-13T22:14:30: 6 s
+  2026-03-13T22:14:30 -> 2026-03-13T22:14:33: 3 s
+  2026-03-13T22:14:33 -> 2026-03-13T22:14:40: 7 s
+  2026-03-13T22:14:40 -> 2026-03-13T22:14:44: 4 s
+  2026-03-13T22:14:44 -> 2026-03-13T22:14:51: 7 s
+  2026-03-13T22:14:51 -> 2026-03-13T22:14:58: 7 s
+  2026-03-13T22:14:58 -> 2026-03-13T22:15:01: 3 s
+  2026-03-13T22:15:01 -> 2026-03-13T22:15:08: 7 s
+  2026-03-13T22:15:08 -> 2026-03-13T22:15:22: 14 s
+  2026-03-13T22:15:22 -> 2026-03-13T22:16:02: 40 s
+  2026-03-13T22:16:02 -> 2026-03-13T22:22:14: 372 s
+  2026-03-13T22:22:14 -> 2026-03-13T22:25:14: 180 s
+  duracion total: 0:11:11
+
+== Actividad diaria
+  2026-03-02: 8
+  2026-03-03: 8
+  2026-03-04: 8
+  2026-03-05: 13
+  2026-03-06: 8
+  2026-03-07: 8
+  2026-03-08: 9
+  2026-03-13: 16
+  2026-03-14: 6
