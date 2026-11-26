@@ -1,0 +1,12 @@
+fecha_utc: 2026-11-26T16:38:12Z
+== originales
+logs_aplicacion.log: OK
+sirar_auditoria.db: OK
+dump_base_datos.sql: OK
+A R C:\Users\bunker\Desktop\Proyectos Jefe\proyecto-sirar\student-package\student-package\evidencia\sirar_auditoria.db
+== copia de trabajo
+logs_aplicacion.log: OK
+sirar_auditoria.db: OK
+dump_base_datos.sql: OK
+== contenedor
+98faac20f8b642604fcabaf9470bc39df5671ada6221476c03ccf7ddc6d4e5d2 *student-package.rar
