@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.990506329113924" branch-rate="0.8461538461538461" lines-covered="313" lines-valid="316" branches-covered="66" branches-valid="78" complexity="125" version="0" timestamp="1795712420">
+<coverage line-rate="0.9901960784313726" branch-rate="0.8461538461538461" lines-covered="303" lines-valid="306" branches-covered="66" branches-valid="78" complexity="125" version="0" timestamp="1795732055">
   <sources>
     <source>/repo/04_pruebas/SIRAR-QA/</source>
   </sources>
   <packages>
-    <package name="SIRAR.Auditoria" line-rate="0.990506329113924" branch-rate="0.8461538461538461" complexity="125">
+    <package name="SIRAR.Auditoria" line-rate="0.9901960784313726" branch-rate="0.8461538461538461" complexity="125">
       <classes>
         <class name="Program" filename="/repo/04_pruebas/SIRAR-QA/Program.cs" line-rate="0.9848484848484849" branch-rate="0.5833333333333334" complexity="12">
           <methods>
@@ -522,58 +522,48 @@
                 <line number="9" hits="72" branch="false" />
                 <line number="10" hits="72" branch="false" />
                 <line number="11" hits="72" branch="true" condition-coverage="100% (2/2)" />
+                <line number="13" hits="72" branch="false" />
                 <line number="14" hits="72" branch="false" />
                 <line number="15" hits="72" branch="false" />
                 <line number="16" hits="72" branch="false" />
                 <line number="17" hits="72" branch="false" />
-                <line number="18" hits="72" branch="false" />
+                <line number="19" hits="72" branch="false" />
                 <line number="20" hits="72" branch="false" />
                 <line number="21" hits="72" branch="false" />
-                <line number="22" hits="72" branch="false" />
-                <line number="24" hits="72" branch="false" />
+                <line number="23" hits="72" branch="false" />
+                <line number="25" hits="72" branch="false" />
+                <line number="26" hits="72" branch="false" />
                 <line number="27" hits="72" branch="false" />
-                <line number="28" hits="72" branch="false" />
                 <line number="29" hits="72" branch="false" />
                 <line number="31" hits="72" branch="false" />
+                <line number="32" hits="72" branch="false" />
+                <line number="33" hits="72" branch="false" />
                 <line number="34" hits="72" branch="false" />
                 <line number="35" hits="72" branch="false" />
-                <line number="36" hits="72" branch="false" />
                 <line number="37" hits="72" branch="false" />
                 <line number="38" hits="72" branch="false" />
+                <line number="39" hits="72" branch="false" />
+                <line number="40" hits="72" branch="false" />
+                <line number="41" hits="72" branch="false" />
                 <line number="43" hits="72" branch="false" />
                 <line number="44" hits="72" branch="false" />
                 <line number="45" hits="72" branch="false" />
                 <line number="46" hits="72" branch="false" />
                 <line number="47" hits="72" branch="false" />
                 <line number="48" hits="72" branch="false" />
-                <line number="49" hits="72" branch="false" />
                 <line number="50" hits="72" branch="false" />
                 <line number="51" hits="72" branch="false" />
-                <line number="52" hits="72" branch="false" />
-                <line number="53" hits="72" branch="false" />
-                <line number="54" hits="72" branch="false" />
-                <line number="55" hits="72" branch="false" />
-                <line number="56" hits="72" branch="false" />
-                <line number="57" hits="72" branch="false" />
-                <line number="60" hits="72" branch="false" />
-                <line number="61" hits="72" branch="false" />
-                <line number="62" hits="72" branch="false" />
-                <line number="63" hits="72" branch="false" />
-                <line number="64" hits="72" branch="false" />
-                <line number="65" hits="72" branch="false" />
-                <line number="71" hits="72" branch="false" />
-                <line number="72" hits="72" branch="false" />
               </lines>
             </method>
             <method name="HashPlainPasswords" signature="(SirarAuditoria.Data.SirarContext)" line-rate="1" branch-rate="1" complexity="4">
               <lines>
-                <line number="76" hits="72" branch="false" />
-                <line number="77" hits="72" branch="false" />
-                <line number="78" hits="360" branch="false" />
-                <line number="79" hits="792" branch="true" condition-coverage="100% (2/2)" />
-                <line number="80" hits="288" branch="false" />
-                <line number="81" hits="144" branch="true" condition-coverage="100% (2/2)" />
-                <line number="82" hits="72" branch="false" />
+                <line number="55" hits="72" branch="false" />
+                <line number="56" hits="72" branch="false" />
+                <line number="57" hits="360" branch="false" />
+                <line number="58" hits="792" branch="true" condition-coverage="100% (2/2)" />
+                <line number="59" hits="288" branch="false" />
+                <line number="60" hits="144" branch="true" condition-coverage="100% (2/2)" />
+                <line number="61" hits="72" branch="false" />
               </lines>
             </method>
           </methods>
@@ -581,54 +571,44 @@
             <line number="9" hits="72" branch="false" />
             <line number="10" hits="72" branch="false" />
             <line number="11" hits="72" branch="true" condition-coverage="100% (2/2)" />
+            <line number="13" hits="72" branch="false" />
             <line number="14" hits="72" branch="false" />
             <line number="15" hits="72" branch="false" />
             <line number="16" hits="72" branch="false" />
             <line number="17" hits="72" branch="false" />
-            <line number="18" hits="72" branch="false" />
+            <line number="19" hits="72" branch="false" />
             <line number="20" hits="72" branch="false" />
             <line number="21" hits="72" branch="false" />
-            <line number="22" hits="72" branch="false" />
-            <line number="24" hits="72" branch="false" />
+            <line number="23" hits="72" branch="false" />
+            <line number="25" hits="72" branch="false" />
+            <line number="26" hits="72" branch="false" />
             <line number="27" hits="72" branch="false" />
-            <line number="28" hits="72" branch="false" />
             <line number="29" hits="72" branch="false" />
             <line number="31" hits="72" branch="false" />
+            <line number="32" hits="72" branch="false" />
+            <line number="33" hits="72" branch="false" />
             <line number="34" hits="72" branch="false" />
             <line number="35" hits="72" branch="false" />
-            <line number="36" hits="72" branch="false" />
             <line number="37" hits="72" branch="false" />
             <line number="38" hits="72" branch="false" />
+            <line number="39" hits="72" branch="false" />
+            <line number="40" hits="72" branch="false" />
+            <line number="41" hits="72" branch="false" />
             <line number="43" hits="72" branch="false" />
             <line number="44" hits="72" branch="false" />
             <line number="45" hits="72" branch="false" />
             <line number="46" hits="72" branch="false" />
             <line number="47" hits="72" branch="false" />
             <line number="48" hits="72" branch="false" />
-            <line number="49" hits="72" branch="false" />
             <line number="50" hits="72" branch="false" />
             <line number="51" hits="72" branch="false" />
-            <line number="52" hits="72" branch="false" />
-            <line number="53" hits="72" branch="false" />
-            <line number="54" hits="72" branch="false" />
             <line number="55" hits="72" branch="false" />
             <line number="56" hits="72" branch="false" />
-            <line number="57" hits="72" branch="false" />
-            <line number="60" hits="72" branch="false" />
+            <line number="57" hits="360" branch="false" />
+            <line number="58" hits="792" branch="true" condition-coverage="100% (2/2)" />
+            <line number="59" hits="288" branch="false" />
+            <line number="60" hits="144" branch="true" condition-coverage="100% (2/2)" />
             <line number="61" hits="72" branch="false" />
-            <line number="62" hits="72" branch="false" />
-            <line number="63" hits="72" branch="false" />
-            <line number="64" hits="72" branch="false" />
-            <line number="65" hits="72" branch="false" />
-            <line number="71" hits="72" branch="false" />
-            <line number="72" hits="72" branch="false" />
-            <line number="76" hits="72" branch="false" />
-            <line number="77" hits="72" branch="false" />
-            <line number="78" hits="360" branch="false" />
-            <line number="79" hits="792" branch="true" condition-coverage="100% (2/2)" />
-            <line number="80" hits="288" branch="false" />
-            <line number="81" hits="144" branch="true" condition-coverage="100% (2/2)" />
-            <line number="82" hits="72" branch="false" />
           </lines>
         </class>
         <class name="SirarAuditoria.Data.SirarContext" filename="/repo/04_pruebas/SIRAR-QA/Data/SirarContext.cs" line-rate="1" branch-rate="1" complexity="7">
@@ -693,84 +673,84 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="582" branch="false" />
+                <line number="15" hits="582" branch="false" />
               </lines>
             </method>
             <method name="get_Carnet" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="296" branch="false" />
+                <line number="16" hits="296" branch="false" />
               </lines>
             </method>
             <method name="get_Nombre" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="296" branch="false" />
+                <line number="17" hits="296" branch="false" />
               </lines>
             </method>
             <method name="get_Inscripciones" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="158" branch="false" />
+                <line number="18" hits="158" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="16" hits="582" branch="false" />
+            <line number="15" hits="582" branch="false" />
+            <line number="16" hits="296" branch="false" />
             <line number="17" hits="296" branch="false" />
-            <line number="18" hits="296" branch="false" />
-            <line number="19" hits="158" branch="false" />
+            <line number="18" hits="158" branch="false" />
           </lines>
         </class>
         <class name="SirarAuditoria.Models.Inscripcion" filename="/repo/04_pruebas/SIRAR-QA/Models/Entities.cs" line-rate="1" branch-rate="1" complexity="8">
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="24" hits="22" branch="false" />
+                <line number="23" hits="22" branch="false" />
               </lines>
             </method>
             <method name="get_EstudianteId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="25" hits="464" branch="false" />
+                <line number="24" hits="464" branch="false" />
               </lines>
             </method>
             <method name="get_Estudiante" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="26" hits="22" branch="false" />
+                <line number="25" hits="22" branch="false" />
               </lines>
             </method>
             <method name="get_ModuloId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="27" hits="464" branch="false" />
+                <line number="26" hits="464" branch="false" />
               </lines>
             </method>
             <method name="get_Modulo" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="28" hits="42" branch="false" />
+                <line number="27" hits="42" branch="false" />
               </lines>
             </method>
             <method name="get_Ciclo" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="29" hits="972" branch="false" />
+                <line number="28" hits="972" branch="false" />
               </lines>
             </method>
             <method name="get_Nota" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="30" hits="502" branch="false" />
+                <line number="29" hits="502" branch="false" />
               </lines>
             </method>
             <method name="get_Estado" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="31" hits="990" branch="false" />
+                <line number="30" hits="990" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="24" hits="22" branch="false" />
-            <line number="25" hits="464" branch="false" />
-            <line number="26" hits="22" branch="false" />
-            <line number="27" hits="464" branch="false" />
-            <line number="28" hits="42" branch="false" />
-            <line number="29" hits="972" branch="false" />
-            <line number="30" hits="502" branch="false" />
-            <line number="31" hits="990" branch="false" />
+            <line number="23" hits="22" branch="false" />
+            <line number="24" hits="464" branch="false" />
+            <line number="25" hits="22" branch="false" />
+            <line number="26" hits="464" branch="false" />
+            <line number="27" hits="42" branch="false" />
+            <line number="28" hits="972" branch="false" />
+            <line number="29" hits="502" branch="false" />
+            <line number="30" hits="990" branch="false" />
           </lines>
         </class>
         <class name="SirarAuditoria.Models.Modulo" filename="/repo/04_pruebas/SIRAR-QA/Models/Entities.cs" line-rate="1" branch-rate="1" complexity="5">
@@ -797,7 +777,7 @@
             </method>
             <method name="get_Prerrequisitos" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="700" branch="false" />
+                <line number="10" hits="700" branch="false" />
               </lines>
             </method>
           </methods>
@@ -806,79 +786,79 @@
             <line number="6" hits="870" branch="false" />
             <line number="7" hits="818" branch="false" />
             <line number="8" hits="378" branch="false" />
-            <line number="11" hits="700" branch="false" />
+            <line number="10" hits="700" branch="false" />
           </lines>
         </class>
         <class name="SirarAuditoria.Models.RegistroAuditoria" filename="/repo/04_pruebas/SIRAR-QA/Models/Entities.cs" line-rate="0.8" branch-rate="1" complexity="5">
           <methods>
             <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="49" hits="0" branch="false" />
+                <line number="44" hits="0" branch="false" />
               </lines>
             </method>
             <method name="get_Fecha" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="50" hits="94" branch="false" />
+                <line number="45" hits="94" branch="false" />
               </lines>
             </method>
             <method name="get_Usuario" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="51" hits="194" branch="false" />
+                <line number="46" hits="194" branch="false" />
               </lines>
             </method>
             <method name="get_Accion" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="52" hits="192" branch="false" />
+                <line number="47" hits="192" branch="false" />
               </lines>
             </method>
             <method name="get_Detalle" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="53" hits="198" branch="false" />
+                <line number="48" hits="198" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="49" hits="0" branch="false" />
-            <line number="50" hits="94" branch="false" />
-            <line number="51" hits="194" branch="false" />
-            <line number="52" hits="192" branch="false" />
-            <line number="53" hits="198" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="45" hits="94" branch="false" />
+            <line number="46" hits="194" branch="false" />
+            <line number="47" hits="192" branch="false" />
+            <line number="48" hits="198" branch="false" />
           </lines>
         </class>
         <class name="SirarAuditoria.Models.Usuario" filename="/repo/04_pruebas/SIRAR-QA/Models/Entities.cs" line-rate="0.8" branch-rate="1" complexity="5">
           <methods>
             <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="36" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
               </lines>
             </method>
             <method name="get_Email" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="37" hits="742" branch="false" />
+                <line number="36" hits="742" branch="false" />
               </lines>
             </method>
             <method name="get_Password" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="41" hits="1580" branch="false" />
+                <line number="37" hits="1580" branch="false" />
               </lines>
             </method>
             <method name="get_Rol" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="43" hits="742" branch="false" />
+                <line number="38" hits="742" branch="false" />
               </lines>
             </method>
             <method name="get_EstudianteId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="44" hits="192" branch="false" />
+                <line number="39" hits="192" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="36" hits="0" branch="false" />
-            <line number="37" hits="742" branch="false" />
-            <line number="41" hits="1580" branch="false" />
-            <line number="43" hits="742" branch="false" />
-            <line number="44" hits="192" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="36" hits="742" branch="false" />
+            <line number="37" hits="1580" branch="false" />
+            <line number="38" hits="742" branch="false" />
+            <line number="39" hits="192" branch="false" />
           </lines>
         </class>
         <class name="SirarAuditoria.Security.ContrasenaSegura" filename="/repo/04_pruebas/SIRAR-QA/Security/ContrasenaSegura.cs" line-rate="1" branch-rate="1" complexity="8">
