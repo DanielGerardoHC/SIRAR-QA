@@ -1,0 +1,74 @@
+# Entorno para la defensa
+#   docker compose up -d              API original en 5080 y API corregida en 5081
+#   docker compose run --rm pruebas   Suite contra la version original y la corregida
+#   docker compose run --rm zap-original    Escaneo OWASP ZAP de la version original
+#   docker compose run --rm zap-corregida   Escaneo OWASP ZAP de la version corregida
+#   docker compose down               Detiene todo
+
+name: sirar-qa
+
+x-sdk: &sdk
+  image: mcr.microsoft.com/dotnet/sdk:8.0
+  volumes:
+    - .:/repo
+    - nuget:/root/.nuget/packages
+  environment:
+    ASPNETCORE_ENVIRONMENT: Development
+    ASPNETCORE_URLS: http://+:8080
+
+services:
+  api-original:
+    <<: *sdk
+    container_name: sirar-qa-original
+    ports:
+      - "5080:8080"
+    command: >
+      bash -c "git config --global --add safe.directory '*' &&
+      mkdir -p /app && git -C /repo archive 7156f04 | tar -x -C /app &&
+      cd /app && dotnet run"
+
+  api-corregida:
+    <<: *sdk
+    container_name: sirar-qa-corregida
+    ports:
+      - "5081:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      Jwt__Secret: clave-demo-sirar-qa-2026-minimo-32-caracteres
+    command: >
+      bash -c "mkdir -p /app && cd /repo/04_pruebas/SIRAR-QA &&
+      cp -r Controllers Data Models Security Services Program.cs appsettings.json SIRAR.Auditoria.csproj /app &&
+      cd /app && dotnet run"
+
+  pruebas:
+    <<: *sdk
+    profiles: ["demo"]
+    environment:
+      OUT: /tmp/salida
+    command: bash /repo/04_pruebas/SIRAR-QA/scripts/verificar_defectos.sh
+
+  zap-original:
+    &zap
+    image: ghcr.io/zaproxy/zaproxy:stable
+    profiles: ["demo"]
+    depends_on:
+      - api-original
+    volumes:
+      - ./04_pruebas/SIRAR-QA/reportes/zap_demo:/zap/wrk:rw
+    environment:
+      OBJETIVO: api-original
+    entrypoint: >
+      bash -c "until curl -s -o /dev/null http://$$OBJETIVO:8080/api/modulos; do sleep 3; done;
+      zap-api-scan.py -t http://$$OBJETIVO:8080/swagger/v1/swagger.json -f openapi -r zap_$$OBJETIVO.html -I | grep -E 'WARN-NEW|FAIL-NEW:'"
+
+  zap-corregida:
+    <<: *zap
+    depends_on:
+      - api-corregida
+    environment:
+      OBJETIVO: api-corregida
+
+volumes:
+  nuget:
+    name: nuget8
