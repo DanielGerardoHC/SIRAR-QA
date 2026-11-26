@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Static analysis with the .NET analyzers and Security Code Scan on the original and corrected code
+# Static analysis, both versions
 set -u
 REPO=/repo
 QA=$REPO/04_pruebas/SIRAR-QA

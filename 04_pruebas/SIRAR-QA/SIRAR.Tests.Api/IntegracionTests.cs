@@ -13,8 +13,6 @@ namespace SIRAR.Tests.Api;
 [Trait("Nivel", "Integracion")]
 public class IntegracionTests
 {
-    // D01 · R1 prerrequisitos validados en el servidor
-
     [Fact(DisplayName = "D01 - Matrícula con prerrequisito reprobado es rechazada")]
     public async Task D01_MatriculaConPrerrequisitoReprobado_Rechazada()
     {
@@ -50,8 +48,6 @@ public class IntegracionTests
         Assert.Equal(HttpStatusCode.OK, resp.StatusCode);
     }
 
-    // D02 · Control de rol en calificaciones
-
     [Fact(DisplayName = "D02 - Un estudiante no puede modificar calificaciones")]
     public async Task D02_EstudianteModificaNota_Prohibido()
     {
@@ -85,8 +81,6 @@ public class IntegracionTests
 
         Assert.Equal(HttpStatusCode.OK, resp.StatusCode);
     }
-
-    // D03 · Registro de auditoría
 
     [Fact(DisplayName = "D03 - El cambio de nota queda registrado con usuario y valor anterior")]
     public async Task D03_CambioNota_QuedaRegistrado()
@@ -139,8 +133,6 @@ public class IntegracionTests
         Assert.True(app.ConBaseDeDatos(db => db.RegistrosAuditoria.Any(r => r.Accion == "login_fallido" && r.Usuario == Cuentas.Coordinador)));
     }
 
-    // D04 · Clave de firma fuera del código
-
     [Fact(DisplayName = "D04 - Un token firmado con la clave publicada en el repositorio es rechazado")]
     public async Task D04_TokenConClavePublicada_Rechazado()
     {
@@ -153,8 +145,6 @@ public class IntegracionTests
 
         Assert.Equal(HttpStatusCode.Unauthorized, resp.StatusCode);
     }
-
-    // D05 · Contraseñas protegidas
 
     [Fact(DisplayName = "D05 - Las contraseñas no se almacenan en texto plano")]
     public async Task D05_ContrasenasNoEstanEnTextoPlano()
@@ -169,8 +159,6 @@ public class IntegracionTests
         Assert.DoesNotContain(Cuentas.ClaveAdministrador, claves);
         Assert.DoesNotContain(Cuentas.ClaveEstudiante, claves);
     }
-
-    // D06 · Límite de intentos
 
     [Fact(DisplayName = "D06 - El sexto intento fallido consecutivo es bloqueado")]
     public async Task D06_IntentosRepetidos_Bloqueados()
@@ -187,8 +175,6 @@ public class IntegracionTests
 
         Assert.Equal(HttpStatusCode.TooManyRequests, ultimo);
     }
-
-    // D08 · Expediente solo para su titular o el personal
 
     [Fact(DisplayName = "D08 - Un estudiante no puede consultar el expediente de otro")]
     public async Task D08_ExpedienteAjeno_Prohibido()
@@ -234,8 +220,6 @@ public class IntegracionTests
         Assert.Equal(HttpStatusCode.NotFound, resp.StatusCode);
     }
 
-    // D09 · Matrícula solo a nombre propio
-
     [Fact(DisplayName = "D09 - Un estudiante no puede matricular a otro estudiante")]
     public async Task D09_MatriculaANombreDeOtro_Prohibida()
     {
@@ -258,8 +242,6 @@ public class IntegracionTests
         Assert.Equal(HttpStatusCode.NotFound, resp.StatusCode);
     }
 
-    // D10 · R2 nota mínima de aprobación
-
     [Fact(DisplayName = "D10 - Una nota de 6.5 queda como reprobada")]
     public async Task D10_NotaBajoMinimo_Reprobada()
     {
@@ -271,8 +253,6 @@ public class IntegracionTests
         Assert.Equal(HttpStatusCode.OK, resp.StatusCode);
         Assert.Equal("reprobado", app.ConBaseDeDatos(db => db.Inscripciones.Find(1)!.Estado));
     }
-
-    // D11 · Rango de nota
 
     [Theory(DisplayName = "D11 - Notas fuera de rango son rechazadas")]
     [InlineData(-1.0)]

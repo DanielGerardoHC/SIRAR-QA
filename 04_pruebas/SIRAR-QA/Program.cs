@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<SirarContext>(opt =>
     opt.UseSqlite(builder.Configuration.GetConnectionString("Sirar") ?? "Data Source=sirar_auditoria.db"));
 
-// Signing key comes from configuration or the Jwt__Secret environment variable, never from source code
+// Signing key from configuration
 var jwtSecret = builder.Configuration["Jwt:Secret"];
 if (string.IsNullOrWhiteSpace(jwtSecret) || jwtSecret.Length < 32)
     throw new InvalidOperationException("Jwt:Secret must be configured with at least 32 characters.");
@@ -38,7 +38,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddAuthorization();
 
-// Login attempts limited per client address
+// Limit login attempts
 builder.Services.AddRateLimiter(options =>
 {
     options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
@@ -63,7 +63,7 @@ using (var scope = app.Services.CreateScope())
     SeedData.HashPlainPasswords(db);
 }
 
-// Basic security headers on every response
+// Security headers
 app.Use(async (context, next) =>
 {
     var headers = context.Response.Headers;

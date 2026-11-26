@@ -1,5 +1,5 @@
 root = true
 
 [*.cs]
-# ASP.NET Core has no synchronization context, ConfigureAwait adds nothing here
+# Irrelevant in ASP.NET Core
 dotnet_diagnostic.CA2007.severity = none

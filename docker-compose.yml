@@ -1,10 +1,3 @@
-# Entorno para la defensa
-#   docker compose up -d              API original en 5080 y API corregida en 5081
-#   docker compose run --rm pruebas   Suite contra la version original y la corregida
-#   docker compose run --rm zap-original    Escaneo OWASP ZAP de la version original
-#   docker compose run --rm zap-corregida   Escaneo OWASP ZAP de la version corregida
-#   docker compose down               Detiene todo
-
 name: sirar-qa
 
 x-sdk: &sdk

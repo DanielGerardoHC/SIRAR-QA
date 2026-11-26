@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Runs the API test suite against the original audited code and against the corrected code
+# Suite on both versions
 set -u
 REPO=/repo
 QA=$REPO/04_pruebas/SIRAR-QA

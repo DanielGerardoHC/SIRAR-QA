@@ -34,7 +34,7 @@ public class MatriculaController : ControllerBase
             .Select(i => i.ModuloId)
             .ToListAsync();
 
-        // R1 is enforced on the server, regardless of the client
+        // Enforce R1 server-side
         var pendientes = ReglasAcademicas.PrerrequisitosPendientes(modulo, aprobados);
         if (pendientes.Count > 0)
             return UnprocessableEntity(new

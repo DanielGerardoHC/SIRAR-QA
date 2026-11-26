@@ -7,7 +7,6 @@ public class Modulo
     public string Nombre { get; set; } = "";
     public int Ciclo { get; set; }
 
-    // Relación recursiva: un módulo puede tener varios prerrequisitos
     public List<Modulo> Prerrequisitos { get; set; } = new();
 }
 
@@ -26,7 +25,7 @@ public class Inscripcion
     public Estudiante? Estudiante { get; set; }
     public int ModuloId { get; set; }
     public Modulo? Modulo { get; set; }
-    public string Ciclo { get; set; } = ""; // ej. "2026-C2"
+    public string Ciclo { get; set; } = "";
     public double? Nota { get; set; }
     public string Estado { get; set; } = "cursando"; // cursando | aprobado | reprobado
 }
@@ -35,11 +34,7 @@ public class Usuario
 {
     public int Id { get; set; }
     public string Email { get; set; } = "";
-
-    // --- DEFECTO SEMBRADO (D5): la contraseña se guarda en texto plano ---
-    // Debería almacenarse como hash (por ejemplo BCrypt o PBKDF2), nunca en claro.
     public string Password { get; set; } = "";
-
     public string Rol { get; set; } = "Estudiante"; // Estudiante | Coordinador | Administrador
     public int? EstudianteId { get; set; }
 }

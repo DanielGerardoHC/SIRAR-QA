@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Collects coverage for unit and API tests and builds the HTML report
+# Coverage report
 set -e
 QA=/repo/04_pruebas/SIRAR-QA
 OUT=$QA/reportes/cobertura
