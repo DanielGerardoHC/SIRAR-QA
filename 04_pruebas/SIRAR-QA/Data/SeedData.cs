@@ -1,4 +1,5 @@
 using SirarAuditoria.Models;
+using SirarAuditoria.Security;
 
 namespace SirarAuditoria.Data;
 
@@ -6,6 +7,7 @@ public static class SeedData
 {
     public static void Initialize(SirarContext db)
     {
+        ArgumentNullException.ThrowIfNull(db);
         if (db.Modulos.Any()) return; // ya sembrado
 
         // ---- Módulos (subconjunto simplificado del plan de estudios) ----
@@ -67,5 +69,15 @@ public static class SeedData
         // análisis de riesgos de la Unidad 2.
 
         db.SaveChanges();
+    }
+
+    // Replaces any stored plain text password with its PBKDF2 hash
+    public static void HashPlainPasswords(SirarContext db)
+    {
+        ArgumentNullException.ThrowIfNull(db);
+        var pendientes = db.Usuarios.AsEnumerable().Where(u => !ContrasenaSegura.EsHash(u.Password)).ToList();
+        foreach (var usuario in pendientes)
+            usuario.Password = ContrasenaSegura.Hashear(usuario.Password);
+        if (pendientes.Count > 0) db.SaveChanges();
     }
 }

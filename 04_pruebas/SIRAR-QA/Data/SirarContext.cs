@@ -15,6 +15,7 @@ public class SirarContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        ArgumentNullException.ThrowIfNull(modelBuilder);
         modelBuilder.Entity<Modulo>()
             .HasMany(m => m.Prerrequisitos)
             .WithMany();

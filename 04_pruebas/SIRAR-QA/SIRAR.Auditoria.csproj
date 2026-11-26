@@ -8,7 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="SIRAR.Tests\**" />
+    <Compile Remove="SIRAR.Tests.Api\**" />
+    <Compile Remove="SIRAR.Tests.Unit\**" />
+    <Content Remove="SIRAR.Tests.Api\**;SIRAR.Tests.Unit\**" />
+    <None Remove="SIRAR.Tests.Api\**;SIRAR.Tests.Unit\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +22,9 @@
     </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.8" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.14" />
+    <PackageReference Include="System.Text.Json" Version="8.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.1" />
   </ItemGroup>
 
 </Project>

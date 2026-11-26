@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using SirarAuditoria.Data;
 using SirarAuditoria.Models;
+using SirarAuditoria.Services;
 
 namespace SirarAuditoria.Controllers;
 
@@ -14,26 +14,34 @@ public record CalificacionRequest(double Nota);
 public class CalificacionesController : ControllerBase
 {
     private readonly SirarContext _db;
-    public CalificacionesController(SirarContext db) => _db = db;
+    private readonly double _notaMinima;
+
+    public CalificacionesController(SirarContext db, IConfiguration config)
+    {
+        _db = db;
+        _notaMinima = config.GetValue("Reglas:NotaMinimaAprobacion", ReglasAcademicas.NotaMinimaAprobacionPorDefecto);
+    }
 
     [HttpPut("{inscripcionId}")]
     public async Task<IActionResult> ActualizarNota(int inscripcionId, CalificacionRequest req)
     {
-        if (req.Nota < 0.0 || req.Nota > 10.0)
+        ArgumentNullException.ThrowIfNull(req);
+        if (!ReglasAcademicas.NotaEnRango(req.Nota))
             return BadRequest(new { mensaje = "La nota debe estar entre 0.0 y 10.0." });
 
         var inscripcion = await _db.Inscripciones.FindAsync(inscripcionId);
         if (inscripcion is null) return NotFound();
 
+        var notaAnterior = inscripcion.Nota;
         inscripcion.Nota = req.Nota;
-        inscripcion.Estado = req.Nota >= 7.0 ? "aprobado" : "reprobado";
+        inscripcion.Estado = ReglasAcademicas.EstadoPorNota(req.Nota, _notaMinima);
 
         _db.RegistrosAuditoria.Add(new RegistroAuditoria
         {
             Fecha = DateTime.UtcNow,
             Usuario = User.Identity?.Name ?? "desconocido",
             Accion = "cambio_nota",
-            Detalle = $"Inscripcion {inscripcionId}: nota -> {req.Nota}"
+            Detalle = $"Inscripcion {inscripcionId}: nota {notaAnterior?.ToString() ?? "sin nota"} -> {req.Nota}"
         });
 
         await _db.SaveChangesAsync();
