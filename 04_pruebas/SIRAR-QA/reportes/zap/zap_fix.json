@@ -1,0 +1,703 @@
+{
+	"@programName": "ZAP",
+	"@version": "2.17.0",
+	"@generated": "Thu, 26 Nov 2026 16:46:28",
+	"created": "2026-11-26T16:46:28.413661807Z",
+	"insights":[
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://sirar-fix:8080",
+			"key": "insight.code.3xx",
+			"description": "Percentage of responses with status code 3xx",
+			"statistic": "2"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://sirar-fix:8080",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "97"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://sirar-fix:8080",
+			"key": "insight.endpoint.ctype.application/json",
+			"description": "Percentage of endpoints with content type application/json",
+			"statistic": "6"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://sirar-fix:8080",
+			"key": "insight.endpoint.ctype.application/problem+json",
+			"description": "Percentage of endpoints with content type application/problem+json",
+			"statistic": "4"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://sirar-fix:8080",
+			"key": "insight.endpoint.ctype.text/html",
+			"description": "Percentage of endpoints with content type text/html",
+			"statistic": "4"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://sirar-fix:8080",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "72"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://sirar-fix:8080",
+			"key": "insight.endpoint.method.POST",
+			"description": "Percentage of endpoints with method POST",
+			"statistic": "23"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://sirar-fix:8080",
+			"key": "insight.endpoint.method.PUT",
+			"description": "Percentage of endpoints with method PUT",
+			"statistic": "4"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://sirar-fix:8080",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "47"
+		}
+	],
+	"site":[ 
+		{
+			"@name": "http://sirar-fix:8080",
+			"@host": "sirar-fix",
+			"@port": "8080",
+			"@ssl": "false",
+			"alerts": [ 
+				{
+					"pluginid": "100001",
+					"alertRef": "100001",
+					"alert": "Unexpected Content-Type was returned",
+					"name": "Unexpected Content-Type was returned",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>A Content-Type of text/html was returned by the server.</p><p>This is not one of the types expected to be returned by an API.</p><p>Raised by the 'Alert on Unexpected Content Types' script</p>",
+					"instances":[ 
+						{
+							"id": "752",
+							"uri": "http://sirar-fix:8080/swagger/",
+							"nodeName": "http:\/\/sirar-fix:8080\/swagger\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "text/html",
+							"otherinfo": ""
+						},
+						{
+							"id": "751",
+							"uri": "http://sirar-fix:8080/swagger/index.html",
+							"nodeName": "http:\/\/sirar-fix:8080\/swagger\/index.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "text/html",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "",
+					"otherinfo": "",
+					"reference": "",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "796"
+				},
+				{
+					"pluginid": "100000",
+					"alertRef": "100000-1",
+					"alert": "A Client Error response code was returned by the server",
+					"name": "A Client Error response code was returned by the server",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>A response code of 404 was returned by the server.</p><p>This may indicate that the application is failing to handle unexpected input correctly.</p><p>Raised by the 'Alert on HTTP Response Code Error' script</p>",
+					"instances":[ 
+						{
+							"id": "15",
+							"uri": "http://sirar-fix:8080",
+							"nodeName": "http:\/\/sirar-fix:8080",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "734",
+							"uri": "http://sirar-fix:8080/",
+							"nodeName": "http:\/\/sirar-fix:8080\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "5",
+							"uri": "http://sirar-fix:8080/1520572235421067734",
+							"nodeName": "http:\/\/sirar-fix:8080\/1520572235421067734",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "16",
+							"uri": "http://sirar-fix:8080/api",
+							"nodeName": "http:\/\/sirar-fix:8080\/api",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "737",
+							"uri": "http://sirar-fix:8080/api/",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "6",
+							"uri": "http://sirar-fix:8080/api/2122856869430506619",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/2122856869430506619",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "18",
+							"uri": "http://sirar-fix:8080/api/auth",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/auth",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "739",
+							"uri": "http://sirar-fix:8080/api/auth/",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/auth\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "7",
+							"uri": "http://sirar-fix:8080/api/auth/641046439779042576",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/auth\/641046439779042576",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "857",
+							"uri": "http://sirar-fix:8080/api/auth/actuator/health",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/auth\/actuator\/health",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "21",
+							"uri": "http://sirar-fix:8080/api/calificaciones",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/calificaciones",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "740",
+							"uri": "http://sirar-fix:8080/api/calificaciones/",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/calificaciones\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "8",
+							"uri": "http://sirar-fix:8080/api/calificaciones/477248348086620853",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/calificaciones\/477248348086620853",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "405",
+							"otherinfo": ""
+						},
+						{
+							"id": "26",
+							"uri": "http://sirar-fix:8080/api/matricula",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/matricula",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "405",
+							"otherinfo": ""
+						},
+						{
+							"id": "743",
+							"uri": "http://sirar-fix:8080/api/matricula/",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/matricula\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "405",
+							"otherinfo": ""
+						},
+						{
+							"id": "9",
+							"uri": "http://sirar-fix:8080/api/matricula/4106798351705638196",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/matricula\/4106798351705638196",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "30",
+							"uri": "http://sirar-fix:8080/api/matricula/estudiante",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/matricula\/estudiante",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "746",
+							"uri": "http://sirar-fix:8080/api/matricula/estudiante/",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/matricula\/estudiante\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "10",
+							"uri": "http://sirar-fix:8080/api/matricula/estudiante/7388282704647984042",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/matricula\/estudiante\/7388282704647984042",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "401",
+							"otherinfo": ""
+						},
+						{
+							"id": "3",
+							"uri": "http://sirar-fix:8080/api/matricula/estudiante/carnet",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/matricula\/estudiante\/carnet",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "401",
+							"otherinfo": ""
+						},
+						{
+							"id": "745",
+							"uri": "http://sirar-fix:8080/api/matricula/estudiante/carnet/",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/matricula\/estudiante\/carnet\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "401",
+							"otherinfo": ""
+						},
+						{
+							"id": "11",
+							"uri": "http://sirar-fix:8080/api/modulos/2826695915087521999",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/modulos\/2826695915087521999",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "35",
+							"uri": "http://sirar-fix:8080/api/modulos/codigo",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/modulos\/codigo",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "747",
+							"uri": "http://sirar-fix:8080/api/modulos/codigo/",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/modulos\/codigo\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "12",
+							"uri": "http://sirar-fix:8080/api/modulos/codigo/2688028197105061729",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/modulos\/codigo\/2688028197105061729",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "4",
+							"uri": "http://sirar-fix:8080/api/modulos/codigo/prerrequisitos",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/modulos\/codigo\/prerrequisitos",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "748",
+							"uri": "http://sirar-fix:8080/api/modulos/codigo/prerrequisitos/",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/modulos\/codigo\/prerrequisitos\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "13",
+							"uri": "http://sirar-fix:8080/swagger/874700757263348620",
+							"nodeName": "http:\/\/sirar-fix:8080\/swagger\/874700757263348620",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "40",
+							"uri": "http://sirar-fix:8080/swagger/v1",
+							"nodeName": "http:\/\/sirar-fix:8080\/swagger\/v1",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "750",
+							"uri": "http://sirar-fix:8080/swagger/v1/",
+							"nodeName": "http:\/\/sirar-fix:8080\/swagger\/v1\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "14",
+							"uri": "http://sirar-fix:8080/swagger/v1/2932857891495907483",
+							"nodeName": "http:\/\/sirar-fix:8080\/swagger\/v1\/2932857891495907483",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "0",
+							"uri": "http://sirar-fix:8080/api/auth/login",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/auth\/login ()({email,password})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "401",
+							"otherinfo": ""
+						},
+						{
+							"id": "44",
+							"uri": "http://sirar-fix:8080/api/auth/login",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/auth\/login ()({email,password})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "429",
+							"otherinfo": ""
+						},
+						{
+							"id": "730",
+							"uri": "http://sirar-fix:8080/api/auth/login/",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/auth\/login\/ ()({email,password})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "429",
+							"otherinfo": ""
+						},
+						{
+							"id": "2",
+							"uri": "http://sirar-fix:8080/api/matricula",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/matricula ()({estudianteId,moduloId,ciclo})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "401",
+							"otherinfo": ""
+						},
+						{
+							"id": "731",
+							"uri": "http://sirar-fix:8080/api/matricula/",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/matricula\/ ()({estudianteId,moduloId,ciclo})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "401",
+							"otherinfo": ""
+						},
+						{
+							"id": "556",
+							"uri": "http://sirar-fix:8080/computeMetadata/v1/",
+							"nodeName": "http:\/\/sirar-fix:8080\/computeMetadata\/v1\/ ()({email,password})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "545",
+							"uri": "http://sirar-fix:8080/latest/meta-data/",
+							"nodeName": "http:\/\/sirar-fix:8080\/latest\/meta-data\/ ()({email,password})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "603",
+							"uri": "http://sirar-fix:8080/metadata/instance",
+							"nodeName": "http:\/\/sirar-fix:8080\/metadata\/instance ()({email,password})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "607",
+							"uri": "http://sirar-fix:8080/metadata/v1",
+							"nodeName": "http:\/\/sirar-fix:8080\/metadata\/v1 ()({email,password})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "565",
+							"uri": "http://sirar-fix:8080/opc/v1/instance/",
+							"nodeName": "http:\/\/sirar-fix:8080\/opc\/v1\/instance\/ ()({email,password})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "586",
+							"uri": "http://sirar-fix:8080/opc/v2/instance/",
+							"nodeName": "http:\/\/sirar-fix:8080\/opc\/v2\/instance\/ ()({email,password})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "608",
+							"uri": "http://sirar-fix:8080/openstack/latest/meta_data.json",
+							"nodeName": "http:\/\/sirar-fix:8080\/openstack\/latest\/meta_data.json ()({email,password})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "404",
+							"otherinfo": ""
+						},
+						{
+							"id": "1",
+							"uri": "http://sirar-fix:8080/api/calificaciones/10",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/calificaciones\/10 ()({nota})",
+							"method": "PUT",
+							"param": "",
+							"attack": "",
+							"evidence": "401",
+							"otherinfo": ""
+						},
+						{
+							"id": "733",
+							"uri": "http://sirar-fix:8080/api/calificaciones/10/",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/calificaciones\/10\/ ()({nota})",
+							"method": "PUT",
+							"param": "",
+							"attack": "",
+							"evidence": "401",
+							"otherinfo": ""
+						}
+					],
+					"count": "45",
+					"systemic": false,
+					"solution": "",
+					"otherinfo": "",
+					"reference": "",
+					"cweid": "388",
+					"wascid": "20",
+					"sourceid": "38"
+				},
+				{
+					"pluginid": "10111",
+					"alertRef": "10111",
+					"alert": "Authentication Request Identified",
+					"name": "Authentication Request Identified",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>The given request has been identified as an authentication request. The 'Other Info' field contains a set of key=value lines which identify any relevant fields. If the request is in a context which has an Authentication Method set to \"Auto-Detect\" then this rule will change the authentication to match the request identified.</p>",
+					"instances":[ 
+						{
+							"id": "139",
+							"uri": "http://sirar-fix:8080/api/auth/login",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/auth\/login ()({email,password})",
+							"method": "POST",
+							"param": "email",
+							"attack": "",
+							"evidence": "password",
+							"otherinfo": "userParam=email\nuserValue=zaproxy@example.com\npasswordParam=password"
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
+					"otherinfo": "<p>userParam=email</p><p>userValue=zaproxy@example.com</p><p>passwordParam=password</p>",
+					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "5"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049-1",
+					"alert": "Non-Storable Content",
+					"name": "Non-Storable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
+					"instances":[ 
+						{
+							"id": "146",
+							"uri": "http://sirar-fix:8080/api/matricula/estudiante/carnet",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/matricula\/estudiante\/carnet",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store",
+							"otherinfo": ""
+						},
+						{
+							"id": "149",
+							"uri": "http://sirar-fix:8080/api/modulos/codigo/prerrequisitos",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/modulos\/codigo\/prerrequisitos",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store",
+							"otherinfo": ""
+						},
+						{
+							"id": "151",
+							"uri": "http://sirar-fix:8080/api/auth/login",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/auth\/login ()({email,password})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store",
+							"otherinfo": ""
+						},
+						{
+							"id": "147",
+							"uri": "http://sirar-fix:8080/api/matricula",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/matricula ()({estudianteId,moduloId,ciclo})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store",
+							"otherinfo": ""
+						},
+						{
+							"id": "148",
+							"uri": "http://sirar-fix:8080/api/calificaciones/10",
+							"nodeName": "http:\/\/sirar-fix:8080\/api\/calificaciones\/10 ()({nota})",
+							"method": "PUT",
+							"param": "",
+							"attack": "",
+							"evidence": "PUT ",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "11"
+				}
+			]
+		}
+	],
+	"sequences":[
+	]
+
+}

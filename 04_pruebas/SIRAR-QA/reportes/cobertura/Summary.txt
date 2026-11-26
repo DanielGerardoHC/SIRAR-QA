@@ -1,0 +1,40 @@
+Summary
+  Generated on: 11/26/2026 - 17:00:20
+  Coverage date: 11/26/2026 - 16:59:57 - 11/26/2026 - 17:00:03
+  Parser: MultiReport (4x Cobertura)
+  Assemblies: 1
+  Classes: 18
+  Files: 11
+  Line coverage: 99%
+  Covered lines: 313
+  Uncovered lines: 3
+  Coverable lines: 316
+  Total lines: 563
+  Branch coverage: 84.6% (66 of 78)
+  Covered branches: 66
+  Total branches: 78
+  Method coverage: 96.6% (57 of 59)
+  Full method coverage: 94.9% (56 of 59)
+  Covered methods: 57
+  Fully covered methods: 56
+  Total methods: 59
+
+SIRAR.Auditoria                                           99%
+  Program                                               98.4%
+  SirarAuditoria.Controllers.AuthController              100%
+  SirarAuditoria.Controllers.CalificacionesController    100%
+  SirarAuditoria.Controllers.CalificacionRequest         100%
+  SirarAuditoria.Controllers.LoginRequest                100%
+  SirarAuditoria.Controllers.MatriculaController         100%
+  SirarAuditoria.Controllers.MatriculaRequest            100%
+  SirarAuditoria.Controllers.ModulosController           100%
+  SirarAuditoria.Data.SeedData                           100%
+  SirarAuditoria.Data.SirarContext                       100%
+  SirarAuditoria.Models.Estudiante                       100%
+  SirarAuditoria.Models.Inscripcion                      100%
+  SirarAuditoria.Models.Modulo                           100%
+  SirarAuditoria.Models.RegistroAuditoria                 80%
+  SirarAuditoria.Models.Usuario                           80%
+  SirarAuditoria.Security.ContrasenaSegura               100%
+  SirarAuditoria.Security.JwtSettings                    100%
+  SirarAuditoria.Services.ReglasAcademicas               100%

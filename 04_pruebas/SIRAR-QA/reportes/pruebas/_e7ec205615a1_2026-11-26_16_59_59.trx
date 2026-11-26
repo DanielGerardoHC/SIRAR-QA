@@ -1,0 +1,779 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="b3039c9e-ab56-48fb-ae9f-ed5793cd6a7c" name="@e7ec205615a1 2026-11-26 16:59:59" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-26T16:59:59.0934703+00:00" queuing="2026-11-26T16:59:59.0934704+00:00" start="2026-11-26T16:59:54.1491751+00:00" finish="2026-11-26T17:00:03.6205700+00:00" />
+  <TestSettings name="default" id="462b6c15-2b04-42c5-b763-38f954a8cf6b">
+    <Deployment runDeploymentRoot="_e7ec205615a1_2026-11-26_16_59_59" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="291aca1e-eb7b-48c5-ba50-442d10538401" testId="ad393522-ae48-1b16-3447-347376d3dc32" testName="Sistema - Credenciales correctas entregan sesión y las incorrectas no" computerName="e7ec205615a1" duration="00:00:00.2251745" startTime="2026-11-26T16:59:59.9897534+00:00" endTime="2026-11-26T16:59:59.9897535+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="291aca1e-eb7b-48c5-ba50-442d10538401" />
+    <UnitTestResult executionId="8587d153-d2ff-43a2-8a73-3dd75e916a6e" testId="a03688d8-37cf-8239-23bf-9088133b1ec5" testName="D02 - Un estudiante no puede modificar calificaciones" computerName="e7ec205615a1" duration="00:00:00.1760165" startTime="2026-11-26T17:00:01.0187646+00:00" endTime="2026-11-26T17:00:01.0187648+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8587d153-d2ff-43a2-8a73-3dd75e916a6e" />
+    <UnitTestResult executionId="605e102d-6b40-4f78-8704-9883fc9d8d74" testId="a1c0c802-1109-88e7-1557-ef26a266aee5" testName="D02 - El administrador puede modificar calificaciones" computerName="e7ec205615a1" duration="00:00:00.1759592" startTime="2026-11-26T17:00:01.6843053+00:00" endTime="2026-11-26T17:00:01.6843055+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="605e102d-6b40-4f78-8704-9883fc9d8d74" />
+    <UnitTestResult executionId="2a2fff0a-f601-46b9-9693-dd78fe498929" testId="f4ad3e66-9615-6d93-eb37-20daec65ed55" testName="D11 - Notas fuera de rango son rechazadas(nota: 11)" computerName="e7ec205615a1" duration="00:00:00.2052864" startTime="2026-11-26T16:59:59.0279554+00:00" endTime="2026-11-26T16:59:59.0279557+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a2fff0a-f601-46b9-9693-dd78fe498929" />
+    <UnitTestResult executionId="433376e5-1571-4e31-82cf-eee23532402b" testId="7e0f1d42-9681-fa32-a1d3-ec94f3e11d7e" testName="D01 - Módulo sin prerrequisitos se matricula sin restricción" computerName="e7ec205615a1" duration="00:00:00.2234911" startTime="2026-11-26T17:00:03.2138731+00:00" endTime="2026-11-26T17:00:03.2138732+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="433376e5-1571-4e31-82cf-eee23532402b" />
+    <UnitTestResult executionId="d2047a47-e6ce-4329-ba97-b3090f3d09e3" testId="022ca095-79cf-97f2-d913-eb9e3a5db6a4" testName="D08 - Un estudiante consulta su propio expediente" computerName="e7ec205615a1" duration="00:00:00.1838650" startTime="2026-11-26T17:00:02.9896731+00:00" endTime="2026-11-26T17:00:02.9896733+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2047a47-e6ce-4329-ba97-b3090f3d09e3" />
+    <UnitTestResult executionId="2b7a2ee1-5120-42c3-bf6f-038d591e71b2" testId="88e3fcc9-7503-d55d-c645-83ffa39285d1" testName="D01 - Matrícula con prerrequisito aprobado es aceptada" computerName="e7ec205615a1" duration="00:00:00.1776961" startTime="2026-11-26T17:00:00.6566949+00:00" endTime="2026-11-26T17:00:00.6566951+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2b7a2ee1-5120-42c3-bf6f-038d591e71b2" />
+    <UnitTestResult executionId="eb051188-4df4-47be-8b13-a589f3d46f48" testId="6ee3de57-92bb-877f-369c-3cc8bf903ab9" testName="Aceptación - Un estudiante con todos los prerrequisitos avanza en su ruta" computerName="e7ec205615a1" duration="00:00:01.6166234" startTime="2026-11-26T16:59:58.8178927+00:00" endTime="2026-11-26T16:59:58.8178928+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eb051188-4df4-47be-8b13-a589f3d46f48" />
+    <UnitTestResult executionId="880f67f8-0f62-47df-85ab-a16592e23a48" testId="5c9ec07a-07ea-19bc-edbf-053cd3e6947e" testName="D08 - Un estudiante no puede consultar el expediente de otro" computerName="e7ec205615a1" duration="00:00:00.2044329" startTime="2026-11-26T17:00:02.0429389+00:00" endTime="2026-11-26T17:00:02.0429391+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="880f67f8-0f62-47df-85ab-a16592e23a48" />
+    <UnitTestResult executionId="6d38b19f-8bb0-46ca-a1ac-0d3ca5a2d915" testId="dc0c10f5-4900-ad72-3b61-41d9d58a8384" testName="D08 - El coordinador consulta cualquier expediente" computerName="e7ec205615a1" duration="00:00:00.2273537" startTime="2026-11-26T17:00:00.0880544+00:00" endTime="2026-11-26T17:00:00.0880549+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d38b19f-8bb0-46ca-a1ac-0d3ca5a2d915" />
+    <UnitTestResult executionId="48c6083f-6742-437d-b1f1-1edd4e47ced6" testId="3b720b10-5716-e26b-d95d-51daa7a1b989" testName="Sistema - Los prerrequisitos de un módulo se consultan por código" computerName="e7ec205615a1" duration="00:00:00.2311757" startTime="2026-11-26T16:59:59.1069162+00:00" endTime="2026-11-26T16:59:59.1069164+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="48c6083f-6742-437d-b1f1-1edd4e47ced6" />
+    <UnitTestResult executionId="82f2db4c-0523-4f19-af6a-85ced6a5ddae" testId="06777b12-726a-a943-c80b-14d147a8717e" testName="D04 - Un token firmado con la clave publicada en el repositorio es rechazado" computerName="e7ec205615a1" duration="00:00:00.1525823" startTime="2026-11-26T17:00:01.8376438+00:00" endTime="2026-11-26T17:00:01.8376440+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82f2db4c-0523-4f19-af6a-85ced6a5ddae" />
+    <UnitTestResult executionId="3f84ae4d-0205-4a5b-9db0-700de4b5c14e" testId="101d37c4-212e-992c-f5b9-ab4faaf18d4a" testName="D11 - Notas fuera de rango son rechazadas(nota: -1)" computerName="e7ec205615a1" duration="00:00:00.2375086" startTime="2026-11-26T16:59:59.2664533+00:00" endTime="2026-11-26T16:59:59.2664535+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f84ae4d-0205-4a5b-9db0-700de4b5c14e" />
+    <UnitTestResult executionId="46f9a8e8-8875-471e-bff5-4fefd6329c92" testId="4abc7070-036f-1854-f056-d9a4418a6f44" testName="D11 - Cambio de nota en una inscripción inexistente devuelve 404" computerName="e7ec205615a1" duration="00:00:00.2078870" startTime="2026-11-26T17:00:00.2967771+00:00" endTime="2026-11-26T17:00:00.2967774+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="46f9a8e8-8875-471e-bff5-4fefd6329c92" />
+    <UnitTestResult executionId="5b29022c-c12c-4708-8581-e97cf6621734" testId="138f8b1a-7512-90e9-29ff-7a99dec508e6" testName="D03 - Un inicio de sesión fallido queda registrado" computerName="e7ec205615a1" duration="00:00:00.1933286" startTime="2026-11-26T17:00:02.2374397+00:00" endTime="2026-11-26T17:00:02.2374400+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5b29022c-c12c-4708-8581-e97cf6621734" />
+    <UnitTestResult executionId="a467c883-1aa5-4365-be72-9dec6fe843c2" testId="9090fda3-8e80-e0c8-40b1-8a287fac670f" testName="Sistema - El catálogo de módulos es público y completo" computerName="e7ec205615a1" duration="00:00:00.1780502" startTime="2026-11-26T16:59:59.2858389+00:00" endTime="2026-11-26T16:59:59.2858391+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a467c883-1aa5-4365-be72-9dec6fe843c2" />
+    <UnitTestResult executionId="04ab9f87-5ddd-4f31-8831-f74aa3bee6d6" testId="ab62a157-71fb-a331-ef01-cc46338643ea" testName="D15 - Las respuestas incluyen cabeceras de seguridad(cabecera: &quot;Cross-Origin-Resource-Policy&quot;, valor: &quot;same-origin&quot;)" computerName="e7ec205615a1" duration="00:00:00.1580018" startTime="2026-11-26T16:59:59.4446763+00:00" endTime="2026-11-26T16:59:59.4446765+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="04ab9f87-5ddd-4f31-8831-f74aa3bee6d6" />
+    <UnitTestResult executionId="4de6e221-5564-4aea-9c9e-345c626a2404" testId="65f93327-51a3-1270-e851-c6381974b914" testName="D09 - Matrícula en un módulo inexistente devuelve 404" computerName="e7ec205615a1" duration="00:00:00.1883855" startTime="2026-11-26T17:00:02.8048727+00:00" endTime="2026-11-26T17:00:02.8048729+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4de6e221-5564-4aea-9c9e-345c626a2404" />
+    <UnitTestResult executionId="930a6525-4328-4c19-9000-b65a43ade7ed" testId="e69f3c47-5663-c989-5978-e099084304be" testName="D03 - La matrícula queda registrada" computerName="e7ec205615a1" duration="00:00:01.6207124" startTime="2026-11-26T16:59:58.8218984+00:00" endTime="2026-11-26T16:59:58.8218986+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="930a6525-4328-4c19-9000-b65a43ade7ed" />
+    <UnitTestResult executionId="66257d6d-8181-47d2-b74c-b1eca16d0301" testId="7b4fa714-5f5d-5bad-083e-2a94b27d2490" testName="D01 - Matrícula con prerrequisito reprobado es rechazada" computerName="e7ec205615a1" duration="00:00:00.1928824" startTime="2026-11-26T16:59:59.6645577+00:00" endTime="2026-11-26T16:59:59.6645580+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66257d6d-8181-47d2-b74c-b1eca16d0301" />
+    <UnitTestResult executionId="21ae4ec7-2ef6-4b34-812c-337fde1fd1ac" testId="ef663676-5467-04ac-7f4d-48d025dd8451" testName="Sistema - Las operaciones protegidas exigen sesión(metodo: &quot;POST&quot;, ruta: &quot;/api/matricula&quot;)" computerName="e7ec205615a1" duration="00:00:00.1620460" startTime="2026-11-26T16:59:58.6982232+00:00" endTime="2026-11-26T16:59:58.6982233+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="21ae4ec7-2ef6-4b34-812c-337fde1fd1ac" />
+    <UnitTestResult executionId="8b63d86e-28b1-4067-b7ba-0974d39ab685" testId="16265cd1-d476-0672-57d1-f87ddbd67a8b" testName="D02 - El coordinador puede modificar calificaciones" computerName="e7ec205615a1" duration="00:00:00.2035215" startTime="2026-11-26T16:59:59.4706964+00:00" endTime="2026-11-26T16:59:59.4706967+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8b63d86e-28b1-4067-b7ba-0974d39ab685" />
+    <UnitTestResult executionId="24123e0b-3c71-4f4b-8d5b-5a9a554f7fcd" testId="7a227754-29bf-10ec-5caa-6d539e3a3be0" testName="D15 - Las respuestas incluyen cabeceras de seguridad(cabecera: &quot;X-Content-Type-Options&quot;, valor: &quot;nosniff&quot;)" computerName="e7ec205615a1" duration="00:00:00.1489012" startTime="2026-11-26T16:59:59.6057617+00:00" endTime="2026-11-26T16:59:59.6057622+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="24123e0b-3c71-4f4b-8d5b-5a9a554f7fcd" />
+    <UnitTestResult executionId="ee51a9f6-e9c0-4972-817d-59fb79183158" testId="7724e281-ed18-b0c0-0819-0e6090870c83" testName="D08 - Un carnet inexistente devuelve 404" computerName="e7ec205615a1" duration="00:00:00.1842561" startTime="2026-11-26T17:00:00.8418662+00:00" endTime="2026-11-26T17:00:00.8418664+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee51a9f6-e9c0-4972-817d-59fb79183158" />
+    <UnitTestResult executionId="d1a114ff-0e8c-4a17-afaa-37578043d930" testId="4e2708c3-1a70-bde8-af2a-aabc7d749aac" testName="Sistema - Las operaciones protegidas exigen sesión(metodo: &quot;GET&quot;, ruta: &quot;/api/matricula/estudiante/SW-2023-014&quot;)" computerName="e7ec205615a1" duration="00:00:01.3293200" startTime="2026-11-26T16:59:58.5354821+00:00" endTime="2026-11-26T16:59:58.5354964+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d1a114ff-0e8c-4a17-afaa-37578043d930" />
+    <UnitTestResult executionId="0f9f9a1f-d4f2-4568-83fb-7cc2b93f6288" testId="4f4a5ad9-f80d-9810-c12f-189f75f310c1" testName="Sistema - Las operaciones protegidas exigen sesión(metodo: &quot;PUT&quot;, ruta: &quot;/api/calificaciones/1&quot;)" computerName="e7ec205615a1" duration="00:00:00.1762690" startTime="2026-11-26T16:59:58.8750852+00:00" endTime="2026-11-26T16:59:58.8750856+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f9f9a1f-d4f2-4568-83fb-7cc2b93f6288" />
+    <UnitTestResult executionId="e1c84e8d-c097-44fe-b1e9-c1d4b58c2767" testId="150ed7f1-7609-f6c4-431e-1efaf6c48f87" testName="Sistema - Flujo completo de matrícula válida y consulta del avance" computerName="e7ec205615a1" duration="00:00:00.2157296" startTime="2026-11-26T17:00:00.2062962+00:00" endTime="2026-11-26T17:00:00.2062964+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e1c84e8d-c097-44fe-b1e9-c1d4b58c2767" />
+    <UnitTestResult executionId="51b4c168-d753-4ee4-be4d-89cd357ecf99" testId="ec2479f0-daf9-32c4-83fc-d102e56c1707" testName="D15 - Las respuestas incluyen cabeceras de seguridad(cabecera: &quot;X-Frame-Options&quot;, valor: &quot;DENY&quot;)" computerName="e7ec205615a1" duration="00:00:00.1573490" startTime="2026-11-26T16:59:59.7637907+00:00" endTime="2026-11-26T16:59:59.7637909+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51b4c168-d753-4ee4-be4d-89cd357ecf99" />
+    <UnitTestResult executionId="47e7e8d4-ebb3-4d36-8612-81d58650491a" testId="fa8ee1fa-bcda-cfae-ff29-41c5a86c6e74" testName="Aceptación - La secuencia del incidente del 13 de marzo ya no es posible" computerName="e7ec205615a1" duration="00:00:00.3766109" startTime="2026-11-26T16:59:59.4193882+00:00" endTime="2026-11-26T16:59:59.4193883+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="47e7e8d4-ebb3-4d36-8612-81d58650491a" />
+    <UnitTestResult executionId="71662639-8477-4cc3-b818-a4d6333fed05" testId="d55d0e81-4821-b017-17b1-0f144cdc7cb4" testName="D09 - Un estudiante no puede matricular a otro estudiante" computerName="e7ec205615a1" duration="00:00:00.1945934" startTime="2026-11-26T16:59:59.8598774+00:00" endTime="2026-11-26T16:59:59.8598776+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71662639-8477-4cc3-b818-a4d6333fed05" />
+    <UnitTestResult executionId="2b9a600d-3e2c-4c4d-9c9d-242e46b7d398" testId="6e51ae23-68af-203a-2fc1-a5353d26553a" testName="D10 - Una nota de 6.5 queda como reprobada" computerName="e7ec205615a1" duration="00:00:00.1806447" startTime="2026-11-26T17:00:00.4781434+00:00" endTime="2026-11-26T17:00:00.4781435+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2b9a600d-3e2c-4c4d-9c9d-242e46b7d398" />
+    <UnitTestResult executionId="71ff46d5-2bfa-4325-9531-d1a7422e638d" testId="399effe1-7aff-a99a-8c59-21e5c0d631d0" testName="Aceptación - Coordinación corrige una nota y el cambio queda trazado" computerName="e7ec205615a1" duration="00:00:00.2223515" startTime="2026-11-26T16:59:59.0419690+00:00" endTime="2026-11-26T16:59:59.0419692+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71ff46d5-2bfa-4325-9531-d1a7422e638d" />
+    <UnitTestResult executionId="a2b0d50e-bb46-460f-b87d-de8ad928a0d3" testId="e465579a-547d-873f-b820-3005f1749182" testName="D05 - Las contraseñas no se almacenan en texto plano" computerName="e7ec205615a1" duration="00:00:00.1559197" startTime="2026-11-26T17:00:02.3938073+00:00" endTime="2026-11-26T17:00:02.3938075+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2b0d50e-bb46-460f-b87d-de8ad928a0d3" />
+    <UnitTestResult executionId="3f3f7688-89a4-4550-a94d-f0e82da19884" testId="a4384045-0db1-b0be-6145-036b8baebe02" testName="D03 - La primera nota de una inscripción queda registrada" computerName="e7ec205615a1" duration="00:00:00.2094223" startTime="2026-11-26T17:00:01.5074843+00:00" endTime="2026-11-26T17:00:01.5074844+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f3f7688-89a4-4550-a94d-f0e82da19884" />
+    <UnitTestResult executionId="52dd7fe3-1d6f-447c-bc8c-c3616582477b" testId="4095cd60-2063-24be-0e7c-e39da32df87b" testName="D03 - El cambio de nota queda registrado con usuario y valor anterior" computerName="e7ec205615a1" duration="00:00:00.2209399" startTime="2026-11-26T17:00:02.6155683+00:00" endTime="2026-11-26T17:00:02.6155685+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52dd7fe3-1d6f-447c-bc8c-c3616582477b" />
+    <UnitTestResult executionId="e047298a-9d99-457c-ad40-5a06a668d37c" testId="f7c92180-a284-7f5c-f798-2f140ac619a0" testName="D06 - El sexto intento fallido consecutivo es bloqueado" computerName="e7ec205615a1" duration="00:00:00.2774070" startTime="2026-11-26T17:00:01.2971875+00:00" endTime="2026-11-26T17:00:01.2971877+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e047298a-9d99-457c-ad40-5a06a668d37c" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="D11 - Notas fuera de rango son rechazadas(nota: 11)" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="f4ad3e66-9615-6d93-eb37-20daec65ed55">
+      <Execution id="2a2fff0a-f601-46b9-9693-dd78fe498929" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D11_NotaFueraDeRango_Rechazada" />
+    </UnitTest>
+    <UnitTest name="D03 - La primera nota de una inscripción queda registrada" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="a4384045-0db1-b0be-6145-036b8baebe02">
+      <Execution id="3f3f7688-89a4-4550-a94d-f0e82da19884" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D03_PrimeraNota_QuedaRegistrada" />
+    </UnitTest>
+    <UnitTest name="D15 - Las respuestas incluyen cabeceras de seguridad(cabecera: &quot;X-Frame-Options&quot;, valor: &quot;DENY&quot;)" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="ec2479f0-daf9-32c4-83fc-d102e56c1707">
+      <Execution id="51b4c168-d753-4ee4-be4d-89cd357ecf99" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.SistemaTests" name="D15_CabecerasDeSeguridad" />
+    </UnitTest>
+    <UnitTest name="D02 - El coordinador puede modificar calificaciones" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="16265cd1-d476-0672-57d1-f87ddbd67a8b">
+      <Execution id="8b63d86e-28b1-4067-b7ba-0974d39ab685" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D02_CoordinadorModificaNota_Permitido" />
+    </UnitTest>
+    <UnitTest name="D11 - Notas fuera de rango son rechazadas(nota: -1)" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="101d37c4-212e-992c-f5b9-ab4faaf18d4a">
+      <Execution id="3f84ae4d-0205-4a5b-9db0-700de4b5c14e" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D11_NotaFueraDeRango_Rechazada" />
+    </UnitTest>
+    <UnitTest name="Sistema - Las operaciones protegidas exigen sesión(metodo: &quot;GET&quot;, ruta: &quot;/api/matricula/estudiante/SW-2023-014&quot;)" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="4e2708c3-1a70-bde8-af2a-aabc7d749aac">
+      <Execution id="d1a114ff-0e8c-4a17-afaa-37578043d930" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.SistemaTests" name="OperacionesProtegidas_SinSesion" />
+    </UnitTest>
+    <UnitTest name="D11 - Cambio de nota en una inscripción inexistente devuelve 404" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="4abc7070-036f-1854-f056-d9a4418a6f44">
+      <Execution id="46f9a8e8-8875-471e-bff5-4fefd6329c92" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D11_InscripcionInexistente_NoEncontrada" />
+    </UnitTest>
+    <UnitTest name="D10 - Una nota de 6.5 queda como reprobada" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="6e51ae23-68af-203a-2fc1-a5353d26553a">
+      <Execution id="2b9a600d-3e2c-4c4d-9c9d-242e46b7d398" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D10_NotaBajoMinimo_Reprobada" />
+    </UnitTest>
+    <UnitTest name="Sistema - Las operaciones protegidas exigen sesión(metodo: &quot;PUT&quot;, ruta: &quot;/api/calificaciones/1&quot;)" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="4f4a5ad9-f80d-9810-c12f-189f75f310c1">
+      <Execution id="0f9f9a1f-d4f2-4568-83fb-7cc2b93f6288" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.SistemaTests" name="OperacionesProtegidas_SinSesion" />
+    </UnitTest>
+    <UnitTest name="D09 - Matrícula en un módulo inexistente devuelve 404" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="65f93327-51a3-1270-e851-c6381974b914">
+      <Execution id="4de6e221-5564-4aea-9c9e-345c626a2404" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D09_ModuloInexistente_NoEncontrado" />
+    </UnitTest>
+    <UnitTest name="Aceptación - La secuencia del incidente del 13 de marzo ya no es posible" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="fa8ee1fa-bcda-cfae-ff29-41c5a86c6e74">
+      <Execution id="47e7e8d4-ebb3-4d36-8612-81d58650491a" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.AceptacionTests" name="SecuenciaDelIncidente_NoEsPosible" />
+    </UnitTest>
+    <UnitTest name="D08 - Un estudiante consulta su propio expediente" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="022ca095-79cf-97f2-d913-eb9e3a5db6a4">
+      <Execution id="d2047a47-e6ce-4329-ba97-b3090f3d09e3" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D08_ExpedientePropio_Permitido" />
+    </UnitTest>
+    <UnitTest name="D03 - La matrícula queda registrada" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="e69f3c47-5663-c989-5978-e099084304be">
+      <Execution id="930a6525-4328-4c19-9000-b65a43ade7ed" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D03_Matricula_QuedaRegistrada" />
+    </UnitTest>
+    <UnitTest name="D09 - Un estudiante no puede matricular a otro estudiante" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="d55d0e81-4821-b017-17b1-0f144cdc7cb4">
+      <Execution id="71662639-8477-4cc3-b818-a4d6333fed05" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D09_MatriculaANombreDeOtro_Prohibida" />
+    </UnitTest>
+    <UnitTest name="Sistema - Las operaciones protegidas exigen sesión(metodo: &quot;POST&quot;, ruta: &quot;/api/matricula&quot;)" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="ef663676-5467-04ac-7f4d-48d025dd8451">
+      <Execution id="21ae4ec7-2ef6-4b34-812c-337fde1fd1ac" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.SistemaTests" name="OperacionesProtegidas_SinSesion" />
+    </UnitTest>
+    <UnitTest name="D15 - Las respuestas incluyen cabeceras de seguridad(cabecera: &quot;X-Content-Type-Options&quot;, valor: &quot;nosniff&quot;)" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="7a227754-29bf-10ec-5caa-6d539e3a3be0">
+      <Execution id="24123e0b-3c71-4f4b-8d5b-5a9a554f7fcd" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.SistemaTests" name="D15_CabecerasDeSeguridad" />
+    </UnitTest>
+    <UnitTest name="Sistema - Flujo completo de matrícula válida y consulta del avance" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="150ed7f1-7609-f6c4-431e-1efaf6c48f87">
+      <Execution id="e1c84e8d-c097-44fe-b1e9-c1d4b58c2767" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.SistemaTests" name="FlujoMatriculaYConsulta" />
+    </UnitTest>
+    <UnitTest name="D04 - Un token firmado con la clave publicada en el repositorio es rechazado" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="06777b12-726a-a943-c80b-14d147a8717e">
+      <Execution id="82f2db4c-0523-4f19-af6a-85ced6a5ddae" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D04_TokenConClavePublicada_Rechazado" />
+    </UnitTest>
+    <UnitTest name="D15 - Las respuestas incluyen cabeceras de seguridad(cabecera: &quot;Cross-Origin-Resource-Policy&quot;, valor: &quot;same-origin&quot;)" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="ab62a157-71fb-a331-ef01-cc46338643ea">
+      <Execution id="04ab9f87-5ddd-4f31-8831-f74aa3bee6d6" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.SistemaTests" name="D15_CabecerasDeSeguridad" />
+    </UnitTest>
+    <UnitTest name="D01 - Módulo sin prerrequisitos se matricula sin restricción" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="7e0f1d42-9681-fa32-a1d3-ec94f3e11d7e">
+      <Execution id="433376e5-1571-4e31-82cf-eee23532402b" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D01_ModuloSinPrerrequisitos_Aceptada" />
+    </UnitTest>
+    <UnitTest name="D02 - Un estudiante no puede modificar calificaciones" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="a03688d8-37cf-8239-23bf-9088133b1ec5">
+      <Execution id="8587d153-d2ff-43a2-8a73-3dd75e916a6e" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D02_EstudianteModificaNota_Prohibido" />
+    </UnitTest>
+    <UnitTest name="D02 - El administrador puede modificar calificaciones" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="a1c0c802-1109-88e7-1557-ef26a266aee5">
+      <Execution id="605e102d-6b40-4f78-8704-9883fc9d8d74" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D02_AdministradorModificaNota_Permitido" />
+    </UnitTest>
+    <UnitTest name="D01 - Matrícula con prerrequisito reprobado es rechazada" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="7b4fa714-5f5d-5bad-083e-2a94b27d2490">
+      <Execution id="66257d6d-8181-47d2-b74c-b1eca16d0301" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D01_MatriculaConPrerrequisitoReprobado_Rechazada" />
+    </UnitTest>
+    <UnitTest name="Sistema - Los prerrequisitos de un módulo se consultan por código" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="3b720b10-5716-e26b-d95d-51daa7a1b989">
+      <Execution id="48c6083f-6742-437d-b1f1-1edd4e47ced6" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.SistemaTests" name="PrerrequisitosPorCodigo" />
+    </UnitTest>
+    <UnitTest name="D01 - Matrícula con prerrequisito aprobado es aceptada" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="88e3fcc9-7503-d55d-c645-83ffa39285d1">
+      <Execution id="2b7a2ee1-5120-42c3-bf6f-038d591e71b2" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D01_MatriculaConPrerrequisitoAprobado_Aceptada" />
+    </UnitTest>
+    <UnitTest name="D03 - El cambio de nota queda registrado con usuario y valor anterior" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="4095cd60-2063-24be-0e7c-e39da32df87b">
+      <Execution id="52dd7fe3-1d6f-447c-bc8c-c3616582477b" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D03_CambioNota_QuedaRegistrado" />
+    </UnitTest>
+    <UnitTest name="D05 - Las contraseñas no se almacenan en texto plano" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="e465579a-547d-873f-b820-3005f1749182">
+      <Execution id="a2b0d50e-bb46-460f-b87d-de8ad928a0d3" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D05_ContrasenasNoEstanEnTextoPlano" />
+    </UnitTest>
+    <UnitTest name="D06 - El sexto intento fallido consecutivo es bloqueado" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="f7c92180-a284-7f5c-f798-2f140ac619a0">
+      <Execution id="e047298a-9d99-457c-ad40-5a06a668d37c" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D06_IntentosRepetidos_Bloqueados" />
+    </UnitTest>
+    <UnitTest name="Sistema - Credenciales correctas entregan sesión y las incorrectas no" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="ad393522-ae48-1b16-3447-347376d3dc32">
+      <Execution id="291aca1e-eb7b-48c5-ba50-442d10538401" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.SistemaTests" name="InicioDeSesion" />
+    </UnitTest>
+    <UnitTest name="D03 - Un inicio de sesión fallido queda registrado" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="138f8b1a-7512-90e9-29ff-7a99dec508e6">
+      <Execution id="5b29022c-c12c-4708-8581-e97cf6621734" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D03_LoginFallido_QuedaRegistrado" />
+    </UnitTest>
+    <UnitTest name="D08 - Un carnet inexistente devuelve 404" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="7724e281-ed18-b0c0-0819-0e6090870c83">
+      <Execution id="ee51a9f6-e9c0-4972-817d-59fb79183158" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D08_CarnetInexistente_NoEncontrado" />
+    </UnitTest>
+    <UnitTest name="Sistema - El catálogo de módulos es público y completo" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="9090fda3-8e80-e0c8-40b1-8a287fac670f">
+      <Execution id="a467c883-1aa5-4365-be72-9dec6fe843c2" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.SistemaTests" name="CatalogoPublico" />
+    </UnitTest>
+    <UnitTest name="Aceptación - Coordinación corrige una nota y el cambio queda trazado" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="399effe1-7aff-a99a-8c59-21e5c0d631d0">
+      <Execution id="71ff46d5-2bfa-4325-9531-d1a7422e638d" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.AceptacionTests" name="CoordinacionCorrigeNota_ConTrazabilidad" />
+    </UnitTest>
+    <UnitTest name="D08 - El coordinador consulta cualquier expediente" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="dc0c10f5-4900-ad72-3b61-41d9d58a8384">
+      <Execution id="6d38b19f-8bb0-46ca-a1ac-0d3ca5a2d915" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D08_CoordinadorConsultaExpediente_Permitido" />
+    </UnitTest>
+    <UnitTest name="D08 - Un estudiante no puede consultar el expediente de otro" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="5c9ec07a-07ea-19bc-edbf-053cd3e6947e">
+      <Execution id="880f67f8-0f62-47df-85ab-a16592e23a48" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.IntegracionTests" name="D08_ExpedienteAjeno_Prohibido" />
+    </UnitTest>
+    <UnitTest name="Aceptación - Un estudiante con todos los prerrequisitos avanza en su ruta" storage="/repo/04_pruebas/sirar-qa/sirar.tests.api/bin/debug/net8.0/sirar.tests.api.dll" id="6ee3de57-92bb-877f-369c-3cc8bf903ab9">
+      <Execution id="eb051188-4df4-47be-8b13-a589f3d46f48" />
+      <TestMethod codeBase="/repo/04_pruebas/SIRAR-QA/SIRAR.Tests.Api/bin/Debug/net8.0/SIRAR.Tests.Api.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SIRAR.Tests.Api.AceptacionTests" name="EstudianteConPrerrequisitos_Avanza" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="ad393522-ae48-1b16-3447-347376d3dc32" executionId="291aca1e-eb7b-48c5-ba50-442d10538401" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a03688d8-37cf-8239-23bf-9088133b1ec5" executionId="8587d153-d2ff-43a2-8a73-3dd75e916a6e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1c0c802-1109-88e7-1557-ef26a266aee5" executionId="605e102d-6b40-4f78-8704-9883fc9d8d74" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4ad3e66-9615-6d93-eb37-20daec65ed55" executionId="2a2fff0a-f601-46b9-9693-dd78fe498929" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7e0f1d42-9681-fa32-a1d3-ec94f3e11d7e" executionId="433376e5-1571-4e31-82cf-eee23532402b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="022ca095-79cf-97f2-d913-eb9e3a5db6a4" executionId="d2047a47-e6ce-4329-ba97-b3090f3d09e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="88e3fcc9-7503-d55d-c645-83ffa39285d1" executionId="2b7a2ee1-5120-42c3-bf6f-038d591e71b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ee3de57-92bb-877f-369c-3cc8bf903ab9" executionId="eb051188-4df4-47be-8b13-a589f3d46f48" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5c9ec07a-07ea-19bc-edbf-053cd3e6947e" executionId="880f67f8-0f62-47df-85ab-a16592e23a48" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc0c10f5-4900-ad72-3b61-41d9d58a8384" executionId="6d38b19f-8bb0-46ca-a1ac-0d3ca5a2d915" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3b720b10-5716-e26b-d95d-51daa7a1b989" executionId="48c6083f-6742-437d-b1f1-1edd4e47ced6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06777b12-726a-a943-c80b-14d147a8717e" executionId="82f2db4c-0523-4f19-af6a-85ced6a5ddae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="101d37c4-212e-992c-f5b9-ab4faaf18d4a" executionId="3f84ae4d-0205-4a5b-9db0-700de4b5c14e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4abc7070-036f-1854-f056-d9a4418a6f44" executionId="46f9a8e8-8875-471e-bff5-4fefd6329c92" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="138f8b1a-7512-90e9-29ff-7a99dec508e6" executionId="5b29022c-c12c-4708-8581-e97cf6621734" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9090fda3-8e80-e0c8-40b1-8a287fac670f" executionId="a467c883-1aa5-4365-be72-9dec6fe843c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab62a157-71fb-a331-ef01-cc46338643ea" executionId="04ab9f87-5ddd-4f31-8831-f74aa3bee6d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="65f93327-51a3-1270-e851-c6381974b914" executionId="4de6e221-5564-4aea-9c9e-345c626a2404" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e69f3c47-5663-c989-5978-e099084304be" executionId="930a6525-4328-4c19-9000-b65a43ade7ed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b4fa714-5f5d-5bad-083e-2a94b27d2490" executionId="66257d6d-8181-47d2-b74c-b1eca16d0301" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ef663676-5467-04ac-7f4d-48d025dd8451" executionId="21ae4ec7-2ef6-4b34-812c-337fde1fd1ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16265cd1-d476-0672-57d1-f87ddbd67a8b" executionId="8b63d86e-28b1-4067-b7ba-0974d39ab685" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a227754-29bf-10ec-5caa-6d539e3a3be0" executionId="24123e0b-3c71-4f4b-8d5b-5a9a554f7fcd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7724e281-ed18-b0c0-0819-0e6090870c83" executionId="ee51a9f6-e9c0-4972-817d-59fb79183158" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e2708c3-1a70-bde8-af2a-aabc7d749aac" executionId="d1a114ff-0e8c-4a17-afaa-37578043d930" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4f4a5ad9-f80d-9810-c12f-189f75f310c1" executionId="0f9f9a1f-d4f2-4568-83fb-7cc2b93f6288" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="150ed7f1-7609-f6c4-431e-1efaf6c48f87" executionId="e1c84e8d-c097-44fe-b1e9-c1d4b58c2767" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec2479f0-daf9-32c4-83fc-d102e56c1707" executionId="51b4c168-d753-4ee4-be4d-89cd357ecf99" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fa8ee1fa-bcda-cfae-ff29-41c5a86c6e74" executionId="47e7e8d4-ebb3-4d36-8612-81d58650491a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d55d0e81-4821-b017-17b1-0f144cdc7cb4" executionId="71662639-8477-4cc3-b818-a4d6333fed05" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6e51ae23-68af-203a-2fc1-a5353d26553a" executionId="2b9a600d-3e2c-4c4d-9c9d-242e46b7d398" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="399effe1-7aff-a99a-8c59-21e5c0d631d0" executionId="71ff46d5-2bfa-4325-9531-d1a7422e638d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e465579a-547d-873f-b820-3005f1749182" executionId="a2b0d50e-bb46-460f-b87d-de8ad928a0d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a4384045-0db1-b0be-6145-036b8baebe02" executionId="3f3f7688-89a4-4550-a94d-f0e82da19884" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4095cd60-2063-24be-0e7c-e39da32df87b" executionId="52dd7fe3-1d6f-447c-bc8c-c3616582477b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f7c92180-a284-7f5c-f798-2f140ac619a0" executionId="e047298a-9d99-457c-ad40-5a06a668d37c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="36" executed="36" passed="36" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 8.0.34)
+[xUnit.net 00:00:00.15]   Discovering: SIRAR.Tests.Api
+[xUnit.net 00:00:00.22]   Discovered:  SIRAR.Tests.Api
+[xUnit.net 00:00:00.22]   Starting:    SIRAR.Tests.Api
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 2 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 2 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 2 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 2 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 2 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 2 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 2 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 2 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 2 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 2 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 10 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 4 entities to in-memory store.
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 2 entities to in-memory store.
+[xUnit.net 00:00:06.28]   Finished:    SIRAR.Tests.Api
+</StdOut>
+    </Output>
+    <CollectorDataEntries>
+      <Collector agentName="e7ec205615a1" uri="datacollector://microsoft/CoverletCodeCoverage/1.0" collectorDisplayName="XPlat code coverage">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="e7ec205615a1/coverage.cobertura.xml"></A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+</TestRun>

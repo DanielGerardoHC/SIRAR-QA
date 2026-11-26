@@ -1,0 +1,23 @@
+[
+ {
+  "RuleID": "generic-api-key",
+  "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations.",
+  "StartLine": 66,
+  "EndLine": 66,
+  "StartColumn": 26,
+  "EndColumn": 83,
+  "Match": "JwtSecretoEmbebido = \"sirar-clave-secreta-2026-no-cambiar\"",
+  "Secret": "sirar-clave-secreta-2026-no-cambiar",
+  "File": "Program.cs",
+  "SymlinkFile": "",
+  "Commit": "c88b0494c2eecc52de6bf159a43f3ae0a7a505d5",
+  "Link": "https://github.com/DanielGerardoHC/SIRAR-QA/blob/c88b0494c2eecc52de6bf159a43f3ae0a7a505d5/Program.cs#L66",
+  "Entropy": 3.794167,
+  "Author": "Equipo SIRAR",
+  "Email": "dev-sirar@itca.edu.sv",
+  "Date": "2026-01-20T10:30:00Z",
+  "Message": "Implementa autenticacion con JWT",
+  "Tags": [],
+  "Fingerprint": "c88b0494c2eecc52de6bf159a43f3ae0a7a505d5:Program.cs:generic-api-key:66"
+ }
+]

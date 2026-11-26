@@ -1,0 +1,4 @@
+Models/Entities.cs(11,25): warning CA1002: Change 'List<Modulo>' in 'Modulo.Prerrequisitos' to use 'Collection<T>', 'ReadOnlyCollection<T>' or 'KeyedCollection<K,V>' (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1002)
+Models/Entities.cs(11,25): warning CA2227: Change 'Prerrequisitos' to be read-only by removing the property setter (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2227)
+Models/Entities.cs(19,30): warning CA1002: Change 'List<Inscripcion>' in 'Estudiante.Inscripciones' to use 'Collection<T>', 'ReadOnlyCollection<T>' or 'KeyedCollection<K,V>' (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1002)
+Models/Entities.cs(19,30): warning CA2227: Change 'Inscripciones' to be read-only by removing the property setter (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2227)
