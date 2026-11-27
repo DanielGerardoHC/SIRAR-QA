@@ -1,0 +1,9 @@
+bin/
+obj/
+reportes/
+scripts/
+SIRAR.Tests.Api/
+SIRAR.Tests.Unit/
+TestResults/
+*.db*
+Dockerfile
